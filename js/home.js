@@ -39,33 +39,33 @@ buttonRight.addEventListener("click", () => {
 function changeImage1(isHovered) {
   const buttonImage = document.getElementById("bt_img1");
   if (isHovered) {
-    buttonImage.src = "./big01_over.png"; // 마우스 오버시 이미지 변경
+    buttonImage.src = "./image/big01_over.png"; // 마우스 오버시 이미지 변경
   } else {
-    buttonImage.src = "./big01.png"; // 마우스 아웃시 이미지 원래대로 변경
+    buttonImage.src = "./image/big01.png"; // 마우스 아웃시 이미지 원래대로 변경
   }
 }
 function changeImage2(isHovered) {
   const buttonImage = document.getElementById("bt_img2");
   if (isHovered) {
-    buttonImage.src = "./big02_over.png"; // 마우스 오버시 이미지 변경
+    buttonImage.src = "./image/big02_over.png"; // 마우스 오버시 이미지 변경
   } else {
-    buttonImage.src = "./big02.png"; // 마우스 아웃시 이미지 원래대로 변경
+    buttonImage.src = "./image/big02.png"; // 마우스 아웃시 이미지 원래대로 변경
   }
 }
 function changeImage3(isHovered) {
   const buttonImage = document.getElementById("bt_img3");
   if (isHovered) {
-    buttonImage.src = "./big03_over.png"; // 마우스 오버시 이미지 변경
+    buttonImage.src = "./image/big03_over.png"; // 마우스 오버시 이미지 변경
   } else {
-    buttonImage.src = "./big03.png"; // 마우스 아웃시 이미지 원래대로 변경
+    buttonImage.src = "./image/big03.png"; // 마우스 아웃시 이미지 원래대로 변경
   }
 }
 function changeImage4(isHovered) {
   const buttonImage = document.getElementById("bt_img4");
   if (isHovered) {
-    buttonImage.src = "./big04_over.png"; // 마우스 오버시 이미지 변경
+    buttonImage.src = "./image/big04_over.png"; // 마우스 오버시 이미지 변경
   } else {
-    buttonImage.src = "./big04.png"; // 마우스 아웃시 이미지 원래대로 변경
+    buttonImage.src = "./image/big04.png"; // 마우스 아웃시 이미지 원래대로 변경
   }
 }
 
