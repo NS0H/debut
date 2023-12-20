@@ -63,23 +63,31 @@
 }
 
 #sub {
-  width: 100vw;
+  width: 100rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
+
+  margin: 0 auto;
 }
 
 #sub > img:nth-child(1) {
-  width: 100vw;
+  width: 120rem;
 }
 
 .string {
+  width: 100rem;
+
   color: #145c93;
   text-align: center;
   font-family: Pretendard;
-  font-size: 1.5vw;
+  font-size: 1.5rem;
   font-style: normal;
   font-weight: 700;
 
-  padding: 2vw;
+  padding: 2rem;
   /* font-weight: 600; */
 }
 
@@ -97,12 +105,12 @@
   background-size: 100% 100%;
   border-radius: 0.5rem;
 
-  width: 20vw;
-  height: 28vw;
+  width: 20rem;
+  height: 28rem;
 }
 
 .cont > img {
-  width: 2vw;
+  width: 2rem;
 }
 
 .banner .steps {
@@ -113,24 +121,24 @@
 
   flex-shrink: 0;
 
-  margin: 1vw;
+  margin: 1rem;
 }
 
 .banner .steps > div:nth-child(1) {
-  width: 5vw;
-  height: 2vw;
+  width: 5rem;
+  height: 2rem;
   flex-shrink: 0;
-  margin: 0.5vw;
-  padding: 0.2vw;
+  margin: 0.5rem;
+  padding: 0.2rem;
 
   color: #fff;
   text-align: center;
   font-family: Pretendard;
-  font-size: 1.2vw;
+  font-size: 1.2rem;
   font-style: normal;
   font-weight: 900;
 
-  border-radius: 6.25vw;
+  border-radius: 6.25rem;
   background: #145c93;
 }
 
@@ -138,32 +146,32 @@
   color: #145c93;
   text-align: center;
   font-family: Pretendard;
-  font-size: 1.875vw;
+  font-size: 1.875rem;
   font-style: normal;
   font-weight: 700;
 
-  margin: 1vw 1.5vw 1.5vw 1.5vw;
+  margin: 1rem 1.5rem 1.5rem 1.5rem;
 }
 
 .banner .steps > div:nth-child(3) {
   color: #333;
   text-align: center;
   font-family: Pretendard;
-  font-size: 1vw;
+  font-size: 1rem;
   font-style: normal;
   font-weight: 700;
 
-  margin: 0.5vw 1.5vw 1.5vw 1.5vw;
+  margin: 0.5rem 1.5rem 1.5rem 1.5rem;
 }
 
 .banner a {
-  width: 15vw;
-  height: 3vw;
+  width: 15rem;
+  height: 3rem;
   display: flex;
-  padding: 0.5625vw 2.5vw;
+  padding: 0.5625rem 2.5rem;
   justify-content: center;
   align-items: center;
-  margin: 0.5vw;
+  margin: 0.5rem;
 
   border-radius: 1.9375rem;
   border: none;
@@ -173,7 +181,7 @@
   color: #fff;
   text-align: center;
   font-family: Pretendard;
-  font-size: 1vw;
+  font-size: 1rem;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -182,11 +190,11 @@
 }
 
 .banner a svg {
-    width: 1vw;
+  width: 1rem;
 }
 
 a#call {
-  gap: 0.8vw;
+  gap: 0.8rem;
   background: linear-gradient(
       0deg,
       rgba(2, 107, 0, 0.2) 0%,
@@ -196,7 +204,7 @@ a#call {
 }
 
 a#naver {
-  gap: 2.5vw;
+  gap: 2.5rem;
   background: linear-gradient(
       0deg,
       rgba(2, 107, 0, 0.2) 0%,
@@ -214,22 +222,22 @@ a#naver {
 
   color: #333;
   font-family: Pretendard;
-  font-size: 1vw;
+  font-size: 1rem;
   font-style: normal;
   font-weight: 500;
 
-  margin: 0.5vw;
+  margin: 0.5rem;
 }
 
 .test div:nth-child(1) {
   border-radius: 6.25rem;
-  width: 3vw;
-  margin-bottom: 0.5vw;
+  width: 3rem;
+  margin-bottom: 0.5rem;
 
   color: #fff;
   text-align: center;
   font-family: Pretendard;
-  font-size: 1vw;
+  font-size: 1rem;
   font-style: normal;
   font-weight: 700;
 }
@@ -248,12 +256,14 @@ a#naver {
 }
 
 #sub > div:last-child {
-  margin: 2vw 18vw 10vw 18.5vw;
+  position: relative;
+  right: 21rem;
+  margin: 2rem 18rem 10rem 18.5rem;
   text-align: start;
 
   color: #000;
   font-family: Pretendard;
-  font-size: 1vw;
+  font-size: 1rem;
   font-style: normal;
   font-weight: 500;
 }

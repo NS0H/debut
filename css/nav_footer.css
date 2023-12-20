@@ -68,11 +68,11 @@ b {
 
 nav {
   display: flex;
-  padding: 1vw 12vw;
+  padding: 1rem 12rem;
   justify-content: space-between;
   align-items: center;
   align-content: center;
-  row-gap: 20.5vw;
+  row-gap: 20.5rem;
   flex-wrap: wrap;
 
   border-bottom: 1px solid #145c93;
@@ -81,7 +81,7 @@ nav {
 }
 
 nav > div {
-  width: 27.0625vw;
+  width: 27.0625rem;
   height: 1.5rem;
   flex-shrink: 0;
 }
@@ -99,7 +99,7 @@ nav a:hover {
 }
 
 #logo {
-  width: 12.4vw;
+  width: 12.4rem;
   /* height: 3.75rem; */
   flex-shrink: 0;
 }
@@ -107,7 +107,7 @@ nav a:hover {
 .menu {
   color: #333;
   font-family: Pretendard;
-  font-size: 1.25vw;
+  font-size: 1.25rem;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
@@ -117,13 +117,13 @@ nav a:hover {
 /* #login {
     color: #000;
     font-family: Pretendard;
-    font-size: 1vw;
+    font-size: 1rem;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
   
-    width: 6.5vw;
-    height: 1.8125vw;
+    width: 6.5rem;
+    height: 1.8125rem;
     flex-shrink: 0;
   
     border-radius: 0.90625rem;
@@ -133,30 +133,30 @@ nav a:hover {
   }
   
   #login > span {
-    width: 2.8125vw;
+    width: 2.8125rem;
     color: #fff;
     font-family: Pretendard;
-    font-size: 1vw;
+    font-size: 1rem;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
   }
   
   #login > img {
-    width: 1.06875vw;
+    width: 1.06875rem;
     flex-shrink: 0;
   } */
 
 /* FOOTER */
 footer {
   display: flex;
-  width: 100vw;
-  margin-top: 3vw;
-  padding: 2vw 16vw;
+  width: 100%;
+  margin-top: 3rem;
+  padding: 2rem 16rem;
   justify-content: space-between;
   align-items: center;
   align-content: center;
-  row-gap: 20.5vw;
+  row-gap: 20.5rem;
   flex-wrap: wrap;
 
   border-top: 1px solid #ddd;
@@ -165,14 +165,14 @@ footer {
 }
 
 footer > #logo {
-  width: 10.82694vw;
+  width: 10.82694rem;
   flex-shrink: 0;
 }
 
 footer > div {
   color: #777;
   font-family: Pretendard;
-  font-size: 1vw;
+  font-size: 1rem;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
@@ -181,13 +181,13 @@ footer > div {
 footer > span > span {
   color: #999;
   font-family: Pretendard;
-  font-size: 1vw;
+  font-size: 1rem;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
 }
 
 footer > #glory {
-  width: 7.5525vw;
+  width: 7.5525rem;
   flex-shrink: 0;
 }

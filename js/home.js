@@ -7,14 +7,14 @@ const inners = document.querySelectorAll(".inner");
 const slides = document.querySelectorAll(".slide");
 let currentIndex = 0; // 현재 슬라이드 화면 인덱스
 
-function adjustWidth() {
-  inners.forEach((inner) => {
-    inner.style.width = window.innerWidth + "px"; // inner의 width를 모두 outer의 width로 만들기
-  });
-  slides.forEach((slide) => {
-    slide.style.width = window.innerWidth + "px"; // inner의 width를 모두 outer의 width로 만들기
-  });
-}
+// function adjustWidth() {
+//   inners.forEach((inner) => {
+//     inner.style.width = window.innerWidth + "px"; // inner의 width를 모두 outer의 width로 만들기
+//   });
+//   slides.forEach((slide) => {
+//     slide.style.width = window.innerWidth + "px"; // inner의 width를 모두 outer의 width로 만들기
+//   });
+// }
 
 innerList.style.width = `${outer.clientWidth * inners.length}px`; // innerList의 width를 inner의 width * inner의 개수로 만들기
 

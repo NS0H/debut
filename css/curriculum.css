@@ -63,12 +63,18 @@
 }
 
 #sub {
-  width: 100vw;
+  width: 100rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
+
+  margin: 0 auto;
 }
 
-#sub > img {
-  width: 100vw;
+#sub > img:nth-child(1) {
+  width: 120rem;
 }
 
 .twin_tab {
@@ -84,13 +90,13 @@
   list-style: none;
 }
 .twin_tab li {
-  width: 15.625vw;
-  height: 2.5625vw;
+  width: 15.625rem;
+  height: 2.5625rem;
   flex-shrink: 0;
 
   text-align: center;
   font-family: Pretendard;
-  font-size: 1.25vw;
+  font-size: 1.25rem;
   font-style: normal;
   line-height: normal;
 
@@ -98,7 +104,7 @@
   border: none;
 
   position: relative;
-  top: -1vw;
+  top: -1rem;
 }
 
 .twin_tab li {
@@ -140,7 +146,7 @@ h4 {
 
 .cont_area .cont .curri {
   display: flex;
-  width: 100vw;
+  width: 100rem;
 
   justify-content: center;
   flex-direction: column;
@@ -151,22 +157,22 @@ h4 {
   color: #333;
   text-align: center;
   font-family: Pretendard;
-  font-size: 1.2vw;
+  font-size: 1.2rem;
   font-style: normal;
   font-weight: 500;
 
-  margin: 1.5vw;
+  margin: 1.5rem;
 }
 
 .curri > table {
-  width: 75vw;
-  height: 40vw;
+  width: 75rem;
+  height: 40rem;
   font-family: Pretendard;
-  font-size: 1vw;
+  font-size: 1rem;
   font-weight: 700;
   border-collapse: collapse;
 
-  margin: 3vw;
+  margin: 3rem;
 }
 
 .curri > table th,
@@ -180,7 +186,7 @@ td {
   font-family: Pretendard;
   border-left: none;
   background-color: #f7f7f7;
-  width: 6vw;
+  width: 6rem;
 }
 
 .curri > table tr > :last-child {
@@ -188,8 +194,8 @@ td {
 }
 
 .curri > table tr th {
-  width: 5vw;
-  height: 3vw;
+  width: 5rem;
+  height: 3rem;
 
   font-family: "KOHIBaeum";
   font-weight: normal;
@@ -201,7 +207,7 @@ td {
 }
 
 .curri > table#ele_table tr th:nth-child(9) {
-  width: 6vw;
+  width: 6rem;
 }
 
 table#ele_table th:nth-child(2) {

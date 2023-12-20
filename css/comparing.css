@@ -63,12 +63,18 @@
 }
 
 #sub {
-  width: 100vw;
+  width: 100rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
+
+  margin: 0 auto;
 }
 
-#sub > img:nth-child(1) {
-  width: 100vw;
+#sub > img {
+  width: 120rem;
 }
 
 .twin_tab {
@@ -76,13 +82,13 @@
 }
 
 .twin_tab > button {
-  width: 15.625vw;
-  height: 2.5625vw;
+  width: 15.625rem;
+  height: 2.5625rem;
   flex-shrink: 0;
 
   text-align: center;
   font-family: Pretendard;
-  font-size: 1.25vw;
+  font-size: 1.25rem;
   font-style: normal;
   line-height: normal;
 
@@ -90,7 +96,7 @@
   border: none;
 
   position: relative;
-  top: -1vw;
+  top: -1rem;
 }
 
 .twin_tab > button:nth-child(1) {
@@ -106,14 +112,16 @@
 }
 
 .string {
+  width: 100rem;
+  
   color: #145c93;
   text-align: center;
   font-family: Pretendard;
-  font-size: 1.5vw;
+  font-size: 1.5rem;
   font-style: normal;
   font-weight: 700;
 
-  padding: 2vw;
+  padding: 2rem;
   /* font-weight: 600; */
 }
 
@@ -126,23 +134,23 @@
 }
 
 #table {
-  width: 75vw;
+  width: 75rem;
 }
 
 .tab_banner {
-  width: 75vw;
+  width: 75rem;
   background-image: url("../image/tab_banner.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   border-radius: 0.5rem;
   text-align: start;
 
-  padding: 4vw 9vw 4vw 9vw;
-  margin: 5vw;
+  padding: 4rem 9rem 4rem 9rem;
+  margin: 5rem;
 
   color: #000;
   font-family: Pretendard;
-  font-size: 1vw;
+  font-size: 1rem;
   font-style: normal;
   font-weight: 500;
 }

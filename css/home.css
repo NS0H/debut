@@ -65,7 +65,7 @@
 /* SLIDE IMAGE */
 .outer {
   display: flex;
-  width: 100%;
+  width: 100rem;
   flex-direction: column;
   margin: 0 auto;
   overflow-x: hidden;
@@ -82,15 +82,15 @@
   box-sizing: border-box;
 }
 
-.inner img {
-  width: 100%;
-  height: auto;
+.inner > img {
+  width: 100rem;
   display: block;
+  object-fit: contain;
 }
 
 .button-list {
   position: relative;
-  top: -5vw;
+  top: -5rem;
   display: flex;
 
   justify-content: center;
@@ -104,32 +104,33 @@
   color: #fff;
   text-align: center;
   font-family: Pretendard;
-  font-size: 0.875vw;
+  font-size: 0.875rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
 }
 
 hr {
-  width: 4.4375vw;
-  height: 0.0625vw;
+  width: 4.4375rem;
+  height: 0.0625rem;
   color: #fff;
 }
 
 #big4,
 #banner,
 #twin_banner {
-  width: 100vw;
-  display: inline-flex;
-  padding: 1.5vw 5.9375vw;
+  width: 100rem;
+  display: flex;
+  padding: 1.5rem 5.9375rem;
+  margin: 0 auto;
   flex-direction: column;
   align-items: center;
-  gap: 2vw;
+  gap: 2rem;
 }
 
 /* BIG4 */
 #big4 > div {
-  width: 75vw;
+  width: 75rem;
   height: auto;
   background-image: url("../image/big4_wide.png");
   background-repeat: no-repeat;
@@ -137,17 +138,17 @@ hr {
   border-radius: 0.5rem;
 
   display: inline-flex;
-  padding: 5vw 2vw;
+  padding: 5rem 2rem;
   flex-direction: column;
   align-items: center;
-  gap: 1vw;
+  gap: 1rem;
 }
 
 #big4 > div > div:nth-child(1) {
   color: #333;
   text-align: center;
   font-family: Pretendard;
-  font-size: 1.875vw;
+  font-size: 1.875rem;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
@@ -157,14 +158,14 @@ hr {
   color: #135c93;
   text-align: center;
   font-family: KOHIBaeum;
-  font-size: 3.75vw;
+  font-size: 3.75rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
 }
 
 #big4 > div > div:nth-child(3) {
-  padding-top: 1vw;
+  padding-top: 1rem;
 }
 
 .image_button {
@@ -174,7 +175,7 @@ hr {
 }
 
 .image_button img {
-  width: 15vw;
+  width: 15rem;
   height: auto;
 }
 
@@ -185,7 +186,7 @@ hr {
 }
 
 #banner > div {
-  width: 75vw;
+  width: 75rem;
   background-image: url("../image/banner_source.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -210,16 +211,16 @@ hr {
 }
 
 #banner > div > div div:first-child {
-  font-size: 1vw;
+  font-size: 1rem;
 }
 
 #banner > div > div div:nth-child(2) {
-  font-size: 2vw;
+  font-size: 2rem;
 }
 
 #banner > div > div > button {
-  width: 5vw;
-  height: 2vw;
+  width: 5rem;
+  height: 2rem;
   flex-shrink: 0;
   margin: 0.2rem;
 
@@ -244,8 +245,8 @@ hr {
 
 #twin_banner > div {
   display: inline-flex;
-  width: 36.5vw;
-  padding: 3vw 2.5vw;
+  width: 36.5rem;
+  padding: 3rem 2.5rem;
   flex-direction: column;
   align-items: flex-start;
   flex-shrink: 0;
@@ -270,11 +271,11 @@ hr {
   text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
   font-family: Pretendard;
 
-  font-size: 1.5vw;
+  font-size: 1.5rem;
   font-style: normal;
   font-weight: 700;
 }
 
 #twin_banner > div > div > div:nth-child(2) {
-  font-size: 1vw;
+  font-size: 1rem;
 }
