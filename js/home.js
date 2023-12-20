@@ -70,35 +70,35 @@ function changeImage4(isHovered) {
 }
 
 function toDebut() {
-  window.location.href = "../debut.html";
+  window.location.href = "./debut.html";
 }
 
 function toDebut1() {
-  window.location.href = "../debut.html#big1";
+  window.location.href = "./debut.html#big1";
 }
 
 function toDebut2() {
-  window.location.href = "../debut.html#big2";
+  window.location.href = "./debut.html#big2";
 }
 
 function toDebut3() {
-  window.location.href = "../debut.html#big3";
+  window.location.href = "./debut.html#big3";
 }
 
 function toDebut4() {
-  window.location.href = "../debut.html#big4";
+  window.location.href = "./debut.html#big4";
 }
 
 function toAdmission() {
-  window.location.href = "../admission.html";
+  window.location.href = "./admission.html";
 }
 
 function toCurri1() {
-  window.location.href = "../curriculum.html#element";
+  window.location.href = "./curriculum.html#element";
 }
 
 function toCurri2() {
-  window.location.href = "../curriculum.html#middle";
+  window.location.href = "./curriculum.html#middle";
 }
 
 // 초기 로딩 시
