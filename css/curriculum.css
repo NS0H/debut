@@ -1,0 +1,283 @@
+@font-face {
+  font-family: "Pretendard";
+  font-weight: 500;
+  font-style: normal;
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Medium.eot");
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Medium.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Medium.woff2")
+      format("woff2"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Medium.woff")
+      format("woff"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Medium.ttf")
+      format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Pretendard";
+  font-weight: 700;
+  font-style: normal;
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Bold.eot");
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Bold.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Bold.woff2")
+      format("woff2"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Bold.woff")
+      format("woff"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Bold.ttf")
+      format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Pretendard";
+  font-weight: 800;
+  font-style: normal;
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-ExtraBold.eot");
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-ExtraBold.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-ExtraBold.woff2")
+      format("woff2"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-ExtraBold.woff")
+      format("woff"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-ExtraBold.ttf")
+      format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "KOHIBaeum";
+  font-weight: normal;
+  font-style: normal;
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/kohi/KOHIBaeum.eot");
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/kohi/KOHIBaeum.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/kohi/KOHIBaeum.woff2")
+      format("woff2"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/kohi/KOHIBaeum.woff")
+      format("woff"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/kohi/KOHIBaeum.ttf")
+      format("truetype");
+  font-display: swap;
+}
+
+#sub {
+  width: 100vw;
+  text-align: center;
+}
+
+#sub > img {
+  width: 100vw;
+}
+
+.twin_tab {
+  background-color: #fff;
+}
+
+.twin_tab > .tab {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  list-style: none;
+}
+.twin_tab li {
+  width: 15.625vw;
+  height: 2.5625vw;
+  flex-shrink: 0;
+
+  text-align: center;
+  font-family: Pretendard;
+  font-size: 1.25vw;
+  font-style: normal;
+  line-height: normal;
+
+  background: none;
+  border: none;
+
+  position: relative;
+  top: -1vw;
+}
+
+.twin_tab li {
+  color: #404040;
+  font-weight: 500;
+}
+
+.twin_tab li.is_on {
+  border-bottom: 2px solid #145c93;
+}
+
+.twin_tab li.is_on > button {
+  color: #145c93;
+  font-weight: 800;
+}
+
+h4 {
+  color: #145c93;
+  font-family: Pretendard;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.cont_area {
+  margin: 10px auto;
+}
+.cont_area .cont {
+  display: none;
+  background: #fff;
+  color: #000;
+  text-align: center;
+  width: 100%;
+  padding-top: 20px;
+}
+
+.cont_area .is_on {
+  display: inherit;
+}
+
+.cont_area .cont .curri {
+  display: flex;
+  width: 100vw;
+
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.curri > div {
+  color: #333;
+  text-align: center;
+  font-family: Pretendard;
+  font-size: 1.2vw;
+  font-style: normal;
+  font-weight: 500;
+
+  margin: 1.5vw;
+}
+
+.curri > table {
+  width: 75vw;
+  height: 40vw;
+  font-family: Pretendard;
+  font-size: 1vw;
+  font-weight: 700;
+  border-collapse: collapse;
+
+  margin: 3vw;
+}
+
+.curri > table th,
+td {
+  border: 1px solid #d6d6d7;
+}
+
+.curri > table tr > :nth-child(1) {
+  color: #888887;
+  font-weight: 800;
+  font-family: Pretendard;
+  border-left: none;
+  background-color: #f7f7f7;
+  width: 6vw;
+}
+
+.curri > table tr > :last-child {
+  border-right: none;
+}
+
+.curri > table tr th {
+  width: 5vw;
+  height: 3vw;
+
+  font-family: "KOHIBaeum";
+  font-weight: normal;
+  color: #fff;
+}
+
+.curri > table > thead > tr > th:first-child {
+  background-color: #fff;
+}
+
+.curri > table#ele_table tr th:nth-child(9) {
+  width: 6vw;
+}
+
+table#ele_table th:nth-child(2) {
+  background-color: #ebcf58;
+  color: #000;
+}
+
+table#ele_table th:nth-child(3) {
+  background-color: #dde15a;
+  color: #000;
+}
+
+table#ele_table th:nth-child(4) {
+  background-color: #e7a346;
+}
+
+table#ele_table th:nth-child(5) {
+  background-color: #dc7b3f;
+}
+
+table#ele_table th:nth-child(6) {
+  background-color: #d6605a;
+}
+
+table#ele_table th:nth-child(7) {
+  background-color: #ac442e;
+}
+
+table#ele_table th:nth-child(8) {
+  background-color: #854033;
+}
+
+table#ele_table th:nth-child(9) {
+  background-color: #533a28;
+}
+
+table#ele_table th:nth-child(10) {
+  background-color: #5d2f64;
+}
+
+table#ele_table th:nth-child(11) {
+  background-color: #5d3164;
+}
+
+table#mid_table th:nth-child(2) {
+  background-color: #9cc35d;
+}
+
+table#mid_table th:nth-child(3) {
+  background-color: #73b360;
+}
+
+table#mid_table th:nth-child(4) {
+  background-color: #5a8f74;
+}
+
+table#mid_table th:nth-child(5) {
+  background-color: #647b59;
+}
+
+table#mid_table th:nth-child(6) {
+  background-color: #4c899d;
+}
+
+table#mid_table th:nth-child(7) {
+  background-color: #3272a9;
+}
+
+table#mid_table th:nth-child(8) {
+  background-color: #204f89;
+}
+
+table#mid_table th:nth-child(9) {
+  background-color: #133461;
+}
+
+table#mid_table th:nth-child(10) {
+  background-color: #4d247d;
+}

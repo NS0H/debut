@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="데뷰영어학원" />
+    <meta property="og:title" content="데뷰영어학원" />
+    <meta property="og:description" content="데뷰영어학원입니다." />
+    <meta property="og:image" content="/logo_blue.png" />
+
+    <title>데뷰영어학원</title>
+
+    <link rel="icon" href="/image/small_logo.png" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+
+    <link href="/css/debut.css" rel="stylesheet" />
+    <link href="/css/nav_footer.css" rel="stylesheet" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Poor+Story&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- MENU -->
+    <nav>
+      <a href="/index.html">
+        <img id="logo" src="/image/logo_blue.png" />
+      </a>
+      <div class="blank"></div>
+      <div>
+        <a class="menu" href="/debut.html">DEBUT</a>
+        <a class="menu" href="./admission.html">입학절차</a>
+        <a class="menu" href="/curriculum.html">커리큘럼</a>
+      </div>
+      <!-- <button id="login">
+        <img src="/image/login_bt.png" />
+        <span>로그인</span>
+      </button> -->
+    </nav>
+    <div id="sub">
+      <img src="./image/debut_main.jpg" />
+      <div class="twin_tab">
+        <button onclick="toDebut()">DEBUT</button>
+        <button onclick="toComparing()">차별성</button>
+      </div>
+      <div class="string">
+        데뷰영어학원은 초1 ~ 중3 아이들의<br />
+        <b>학습 프로젝트 전문 영어학원</b>입니다.
+      </div>
+      <!-- ExTab -->
+      <div class="Extab">
+        <ul class="tab">
+          <li class="is_on">
+            <a href="#big1" id="big1_btn" class="btn">프로젝트로 완성하는 영어</a>
+          </li>
+          <li>
+            <a href="#big2" id="big2_btn" class="btn">시험에 강한 영어</a>
+          </li>
+          <li>
+            <a href="#big3" id="big3_btn" class="btn">반복 영어</a>
+          </li>
+          <li>
+            <a href="#big4" id="big4_btn" class="btn">관리 및 평가 시스템</a>
+          </li>
+        </ul>
+        <!-- InTab -->
+        <div class="cont_area">
+          <!-- BIG 1 -->
+          <div id="big1" class="cont is_on">
+            <div>
+              <div class="big_num_title">
+                <div>BIG 1</div>
+                <div>프로젝트로 완성하는 영어</div>
+                <div>
+                  수업과 프로젝트의 융합으로 언어의 전영역 학습 효과를 배가
+                </div>
+              </div>
+              <hr />
+              <div class="sub_string">
+                데뷰 수업은 <b>PBL 학습을 융합한 강의형 수업</b>입니다. 수업
+                시간에 목표를 설정하고 달성하기 위해 배운 내용을 다양한 프로젝트
+                활동을 통해 결과를 이끌어 냅니다. 또한, 개별/그룹 프로젝트
+                수행으로 자연스럽게 반복 학습이 이루어지며, 그 내용을 장기
+                기억으로 가져갈 수 있게 합니다.
+              </div>
+              <div class="tab_banner">
+                <div>
+                  <h4>주요특징</h4>
+                  • 초등 미국 교과서들 중 수준은 높지만 짧은 지문 선정으로 학습
+                  부담 감소<br />
+                  • 매월 초 목표 설정하고 상담과 관리를 통해 함께 달성<br />
+                  • 강의 후 참여하는 활동형 프로젝트와 미션<br />
+                  • 개별 학습 포트폴리오 정리<br />
+                  • 정성 평가와 정량 평가로 지속적인 실력 향상<br />
+                </div>
+                <div>
+                  <img src="./image/portfolio_ele.png" />
+                  <img src="./image/portfolio_mid.png" />
+                </div>
+              </div>
+              <div class="project">
+                <div>
+                  <h4>초등수업 : 프로젝트</h4>
+                  흥미로운 수업과 프로젝트, 학습 미션 연계로
+                  <b>탄탄한 기본기</b>와 <b>창의성</b>을 동시에 확보합니다.
+                </div>
+                <img src="./image/ele_project.png" />
+              </div>
+              <div class="simple">
+                <h4>프로젝트</h4>
+                <img src="./image/project.png" />
+              </div>
+              <div class="simple">
+                <h4>미션</h4>
+                <img src="./image/mission.png" />
+              </div>
+            </div>
+          </div>
+          <!-- BIG 2 -->
+          <div id="big2" class="cont">
+            <div>
+              <div class="big_num_title">
+                <div>BIG 2</div>
+                <div>시험에 강한 영어</div>
+                <div>시험대비에 필요한 쓰기 학습으로 국내외 시험 대비</div>
+              </div>
+              <hr />
+              <div class="sub_string">
+                학생들의 성취도를 주기적으로 점검하여, 시험에서 프로젝트 수업의
+                학습 효과를 결과로 느낄수 있도록 합니다. 또한, 입시 시험 영어에
+                대비하기 위해, 수행 마스터, 내신 마스터, 수준에 따른 수능 마스터
+                프로젝트들을 선정하여, 학생들의 실력을 빠르게 올릴 수 있도록
+                학습하고 있습니다.
+              </div>
+              <div class="tab_banner">
+                <div>
+                  <h4>주요특징</h4>
+                  • 초중등 단계별 목표에 따른 시험 대비<br />
+                  • 실전 시험과 같은 모의 시험 및 문제 풀이<br />
+                  • 수행평가 대비를 위한 Topic Speaking / Writing<br />
+                  • 내신 시험 준비를 위한 서술형대비<br />
+                  • 수능 지문 직독직해와 오답노트 정리로 완성<br />
+                  • 체계적인 데뷰 포트폴리오로 학습 영어 완성<br />
+                </div>
+                <div>
+                  <div class="lecture green">
+                    어학능력시험<br />
+                    토셀/토플
+                  </div>
+                  <div class="lecture light">
+                    중등과정평가<br />
+                    수행평가
+                  </div>
+                  <div class="lecture green">
+                    중학교 교과시험<br />
+                    내신
+                  </div>
+                  <div class="lecture light">
+                    대학입학시험<br />
+                    수능
+                  </div>
+                </div>
+              </div>
+              <div class="project">
+                <div>
+                  <h4>중등수업 : 프로젝트</h4>
+                  학교 수행, 내신, 수능 등 국내 시험 영어를 대비하는 훈련
+                  프로그램으로 구성됩니다.
+                </div>
+                <img src="./image/mid_project.png" />
+              </div>
+              <div class="project">
+                <div>
+                  <h4>중등과제</h4>
+                  쓰기 중심의 과제수행으로 입시 시험 대비 역량을 완성합니다.
+                </div>
+                <div>
+                  <img src="./image/mid_work1.png" />
+                  <img src="./image/mid_work2.png" />
+                  <img src="./image/mid_work3.png" />
+                  <img src="./image/mid_work4.png" />
+                </div>
+              </div>
+              <div class="simple2">
+                <h4>어려운 시험에서도 빛나는 데뷰 내신</h4>
+                <img src="./image/debut_mid_table.png" />
+              </div>
+            </div>
+          </div>
+          <!-- BIG 3 -->
+          <div id="big3" class="cont">
+            <div>
+              <div class="big_num_title">
+                <div>BIG 3</div>
+                <div>반복학습을 통한 탄탄한 영어</div>
+                <div>단계별 학습으로 영어의 기본기를 바르게</div>
+              </div>
+              <hr />
+              <div class="sub_string">
+                단계별 학습으로 영어의 기본기를 바르게 세워드립니다. 학생들이
+                가장 기억을 오래하는 어쩌구(2-3)문장이 들어가면 좋겠네요
+              </div>
+              <div class="tab_banner">
+                <div>
+                  <h4>학습 피라미드</h4>
+                  미국의 국가교육연구소(National Training Laboratories)에서
+                  발표한 학습 피라미드(Learning Pyramid)는 학생들을 다양한
+                  방법으로 가르치고 24시간이 지난 후 학습한 내용을 얼마나
+                  기억하는 지를 제시한 것입니다. 교사가 하는 수업(강의)을 들은
+                  경우에는 5%, 학생이 책이나 수업자료를 읽은 경우에는 10%,
+                  시청각 자료를 활용한 경우에는 20%, 시연(시범)이나 현장견학은
+                  30%, 토론은 50%, 실습(연습)을 포함하는 체험 활동은 75%, 다른
+                  학생을 가르친 경우에는 90%의 기억률을 보였습니다. 수동적인
+                  학습방법보다 참여를 통한 방법이 학생의 기억을 오랫동안
+                  유지하는 데 효과가 있었습니다. 다른 어떤 교수법보다도 동료
+                  학생을 가르친 경우가 기억률이 가장 높았습니다.
+                </div>
+                <div>
+                  <img id="pyramid" src="./image/pyramid.png" />
+                </div>
+              </div>
+              <div class="project">
+                <div>
+                  <h4>초등부 4단계 복습과정</h4>
+                  초등부는 탄탄한 어학 기본기를 쌓으며, 다양한 프로젝트로
+                  창의적인 학습 역량을 마스터하는 과정입니다.<br />다양한
+                  방법으로 복습하여 지루함을 예방하고, 자연스럽게 복습합니다.
+                </div>
+                <img class="repeat" src="./image/repeat_ele.png" />
+              </div>
+              <div class="project">
+                <div>
+                  <h4>중등부 3단계 복습과정</h4>
+                  중등부는 시험에 강한 학습역량을 형성하여, 중등
+                  수행/내신/수능을 조기마스터 하는 과정입니다.<br />기준점에
+                  미달한 학생들은 전문학습 코칭과 관리로 완성도를 높입니다.
+                </div>
+                <img class="repeat" src="./image/repeat_mid.png" />
+              </div>
+            </div>
+          </div>
+          <!-- BIG 4 -->
+          <div id="big4" class="cont">
+            <div>
+              <div class="big_num_title">
+                <div>BIG 4</div>
+                <div>관리 및 평가 시스템</div>
+                <div>
+                  학년과 성취에 맞는 전문화된 프로그램과 집중 관리 시스템
+                </div>
+              </div>
+              <div class="tab_banner">
+                <h4>1.3.6. 관리 책임 제도</h4>
+                <div class="nums">
+                  <div class="num">
+                    <div class="circle" id="num1">1</div>
+                    <div>
+                      1인 초등 이중언어(Bilingual)담임<br />
+                      1인 중등 내신 및 수능 담임<br />
+                      일일 성적 문자 안내
+                    </div>
+                  </div>
+                  <div class="num">
+                    <div class="circle" id="num3">3</div>
+                    <div>
+                      3개월 기본기<br />
+                      3개월 심화과정
+                    </div>
+                  </div>
+                  <div class="num">
+                    <div class="circle" id="num6">6</div>
+                    <div>
+                      6개월<br />
+                      고정 담임제도
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="half_banner">
+                <img src="./image/trainingday.png" />
+                <div class="description">
+                  <div>
+                    <h4><b>TRAINING DAY</b></h4>
+                    수요 학생 집중관리(중등부)
+                  </div>
+                  <div>
+                    주간 클래스 학습 결과에 따라, 일정 수준의 성취도를 도달하지
+                    못한 학생들 의무 참석 / 초등부는 당일 완료
+                    <br /><br />
+                    • 리딩, 문법, 어휘, 온라인 등 부족한 영역을 채울 수 있도록
+                    학습 트레이닝실 자료 구비<br />
+                    • 무단결석 2회 이상 시 경고 및 퇴원 조치
+                  </div>
+                </div>
+              </div>
+              <div class="half_banner">
+                <img src="./image/masterclass.png" />
+                <div class="description">
+                  <div>
+                    <h4><b>MASTER CLASS</b></h4>
+                    수요 특강(중등) / 방학 특강(공통)
+                  </div>
+                  <div>
+                    교육 전문가 선생님들이 매월 수요일 4회 진행하는 수요
+                    클래스와 겨울 방학 기간에 학생들이 필요한 주제로 진행되는
+                    특별한 과정입니다.
+                    <br /><br />
+                    • 프로젝트 마스터(초/중 대상) : 학생들에게 필요에 따른,
+                    어휘, 리딩, 리스닝, 영화 등 다양한 프로젝트 중심 클래스<br />
+                    • 중1~3 문법 마스터 클래스 (초6, 중1 대상) : 모의고사
+                    성취도에 따른 추천<br />
+                    • 수능 특강 (고1~3 대상) : 모의고사 성취도에 따른 추천
+                  </div>
+                </div>
+              </div>
+              <div class="half_banner">
+                <img src="./image/coaching.png" />
+                <div class="description">
+                  <div>
+                    <h4><b>데뷰 학습코칭</b></h4>
+                    전문가 코칭 프로그램
+                  </div>
+                  <div>
+                    학습 코칭 전문가와 함께 정확한 학생 성향 분석을 통한 맞춤식
+                    코칭 프로그램입니다. 학습 결과만 보는 것이 아닌, 학습 과정도
+                    관찰하여 스스로 학습 방법을 내면화하도록 합니다.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- FOOTER -->
+    <footer>
+      <img id="logo" src="/image/logo_gray.png" />
+      <div>
+        <b>데뷰 영어학원</b> | 학원 등록 번호 : 0000 <br />
+        서울특별시 양천구 신목로 38 202호 | Tel : 02-695-1131
+      </div>
+      <div class="blank"></div>
+      <span>
+        <span>협력기관 : </span>
+        <img id="glory" src="./image/glory.png" />
+      </span>
+    </footer>
+
+    <!-- <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script> -->
+    <script src="/js/debut.js"></script>
+  </body>
+</html>

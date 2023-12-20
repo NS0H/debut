@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="데뷰영어학원" />
+    <meta property="og:title" content="데뷰영어학원" />
+    <meta property="og:description" content="데뷰영어학원입니다." />
+    <meta property="og:image" content="/logo_blue.png" />
+
+    <title>데뷰영어학원</title>
+
+    <link rel="icon" href="/image/small_logo.png" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+
+    <link href="/css/comparing.css" rel="stylesheet" />
+    <link href="/css/nav_footer.css" rel="stylesheet" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Poor+Story&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- MENU -->
+    <nav>
+      <a href="/index.html">
+        <img id="logo" src="/image/logo_blue.png" />
+      </a>
+      <div class="blank"></div>
+      <div>
+        <a class="menu" href="/debut.html">DEBUT</a>
+        <a class="menu" href="./admission.html">입학절차</a>
+        <a class="menu" href="/curriculum.html">커리큘럼</a>
+      </div>
+      <!-- <button id="login">
+        <img src="/image/login_bt.png" />
+        <span>로그인</span>
+      </button> -->
+    </nav>
+    <div id="sub">
+      <img src="./image/debut_main.jpg" />
+      <div class="twin_tab">
+        <button onclick="toDebut()">DEBUT</button>
+        <button onclick="toComparing()">차별성</button>
+      </div>
+      <div class="string">데뷰 영어는 <b>Study & Do</b> 입니다.</div>
+      <div class="cont">
+        <img id="table" src="./image/comparing.png" />
+        <div class="tab_banner">
+          <h4>*PBL(Project Based Learning) 학습법이란?</h4>
+
+          PBL (PROJECT BASED LEARNING) 은 학습자 중심의 ‘목표지향적 활동’에
+          주안점을 두며, 과제해결을 위해 학습자가 중심이 되어 스스로 계획을
+          세우고 구체적인 실행 또는 협동학습을 통해 주어진 과제의 최종산출물을
+          창의적으로 생성하면서 적극적으로 지식을 구성해나가는 학습방법입니다.
+        </div>
+      </div>
+    </div>
+    <!-- FOOTER -->
+    <footer>
+      <img id="logo" src="/image/logo_gray.png" />
+      <div>
+        <b>데뷰 영어학원</b> | 학원 등록 번호 : 0000 <br />
+        서울특별시 양천구 신목로 38 202호 | Tel : 02-695-1131
+      </div>
+      <div class="blank"></div>
+      <span>
+        <span>협력기관 : </span>
+        <img id="glory" src="./image/glory.png" />
+      </span>
+    </footer>
+
+    <script src="/js/comparing.js"></script>
+  </body>
+</html>

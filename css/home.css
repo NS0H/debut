@@ -1,0 +1,280 @@
+@font-face {
+  font-family: "Pretendard";
+  font-weight: 500;
+  font-style: normal;
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Medium.eot");
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Medium.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Medium.woff2")
+      format("woff2"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Medium.woff")
+      format("woff"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Medium.ttf")
+      format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Pretendard";
+  font-weight: 700;
+  font-style: normal;
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Bold.eot");
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Bold.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Bold.woff2")
+      format("woff2"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Bold.woff")
+      format("woff"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Bold.ttf")
+      format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Pretendard";
+  font-weight: 800;
+  font-style: normal;
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-ExtraBold.eot");
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-ExtraBold.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-ExtraBold.woff2")
+      format("woff2"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-ExtraBold.woff")
+      format("woff"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-ExtraBold.ttf")
+      format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "KOHIBaeum";
+  font-weight: normal;
+  font-style: normal;
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/kohi/KOHIBaeum.eot");
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/kohi/KOHIBaeum.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/kohi/KOHIBaeum.woff2")
+      format("woff2"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/kohi/KOHIBaeum.woff")
+      format("woff"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/kohi/KOHIBaeum.ttf")
+      format("truetype");
+  font-display: swap;
+}
+
+/* SLIDE IMAGE */
+.outer {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+
+.inner-list {
+  display: flex;
+  flex-direction: row;
+  transition: transform 0.5s ease-in-out;
+}
+
+.inner {
+  height: auto;
+  box-sizing: border-box;
+}
+
+.inner img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.button-list {
+  position: relative;
+  top: -5vw;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.button-list > button {
+  background-color: #145c93;
+  border: none;
+  color: #fff;
+  text-align: center;
+  font-family: Pretendard;
+  font-size: 0.875vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+hr {
+  width: 4.4375vw;
+  height: 0.0625vw;
+  color: #fff;
+}
+
+#big4,
+#banner,
+#twin_banner {
+  width: 100vw;
+  display: inline-flex;
+  padding: 1.5vw 5.9375vw;
+  flex-direction: column;
+  align-items: center;
+  gap: 2vw;
+}
+
+/* BIG4 */
+#big4 > div {
+  width: 75vw;
+  height: auto;
+  background-image: url("../image/big4_wide.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  border-radius: 0.5rem;
+
+  display: inline-flex;
+  padding: 5vw 2vw;
+  flex-direction: column;
+  align-items: center;
+  gap: 1vw;
+}
+
+#big4 > div > div:nth-child(1) {
+  color: #333;
+  text-align: center;
+  font-family: Pretendard;
+  font-size: 1.875vw;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+#big4 > div > div:nth-child(2) {
+  color: #135c93;
+  text-align: center;
+  font-family: KOHIBaeum;
+  font-size: 3.75vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+#big4 > div > div:nth-child(3) {
+  padding-top: 1vw;
+}
+
+.image_button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.image_button img {
+  width: 15vw;
+  height: auto;
+}
+
+/* BANNER */
+#banner {
+  gap: 1rem;
+  flex-shrink: 0;
+}
+
+#banner > div {
+  width: 75vw;
+  background-image: url("../image/banner_source.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  border-radius: 0.5rem;
+}
+
+#banner > div > div {
+  display: flex;
+  padding: 5rem 3.75rem;
+  flex-direction: column;
+
+  cursor: pointer;
+}
+
+#banner > div > div > div {
+  color: #fff;
+  font-family: Pretendard;
+  padding: 0.2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+#banner > div > div div:first-child {
+  font-size: 1vw;
+}
+
+#banner > div > div div:nth-child(2) {
+  font-size: 2vw;
+}
+
+#banner > div > div > button {
+  width: 5vw;
+  height: 2vw;
+  flex-shrink: 0;
+  margin: 0.2rem;
+
+  background: none;
+  border-radius: 1.09375rem;
+  border: 1px solid #fff;
+
+  color: #fff;
+  font-family: Pretendard;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+/* TWIN BANNER */
+#twin_banner {
+  flex-direction: row;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+#twin_banner > div {
+  display: inline-flex;
+  width: 36.5vw;
+  padding: 3vw 2.5vw;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-shrink: 0;
+
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  border-radius: 0.5rem;
+
+  cursor: pointer;
+}
+
+#element {
+  background-image: url("../image/ele_banner_src.png");
+}
+
+#middle {
+  background-image: url("../image/mid_banner_src.png");
+}
+
+#twin_banner > div > div > div {
+  color: #fff;
+  text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+  font-family: Pretendard;
+
+  font-size: 1.5vw;
+  font-style: normal;
+  font-weight: 700;
+}
+
+#twin_banner > div > div > div:nth-child(2) {
+  font-size: 1vw;
+}

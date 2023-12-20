@@ -1,0 +1,259 @@
+@font-face {
+  font-family: "Pretendard";
+  font-weight: 500;
+  font-style: normal;
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Medium.eot");
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Medium.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Medium.woff2")
+      format("woff2"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Medium.woff")
+      format("woff"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Medium.ttf")
+      format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Pretendard";
+  font-weight: 700;
+  font-style: normal;
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Bold.eot");
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Bold.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Bold.woff2")
+      format("woff2"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Bold.woff")
+      format("woff"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Bold.ttf")
+      format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Pretendard";
+  font-weight: 800;
+  font-style: normal;
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-ExtraBold.eot");
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-ExtraBold.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-ExtraBold.woff2")
+      format("woff2"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-ExtraBold.woff")
+      format("woff"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-ExtraBold.ttf")
+      format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "KOHIBaeum";
+  font-weight: normal;
+  font-style: normal;
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/kohi/KOHIBaeum.eot");
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/kohi/KOHIBaeum.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/kohi/KOHIBaeum.woff2")
+      format("woff2"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/kohi/KOHIBaeum.woff")
+      format("woff"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/kohi/KOHIBaeum.ttf")
+      format("truetype");
+  font-display: swap;
+}
+
+#sub {
+  width: 100vw;
+  text-align: center;
+}
+
+#sub > img:nth-child(1) {
+  width: 100vw;
+}
+
+.string {
+  color: #145c93;
+  text-align: center;
+  font-family: Pretendard;
+  font-size: 1.5vw;
+  font-style: normal;
+  font-weight: 700;
+
+  padding: 2vw;
+  /* font-weight: 600; */
+}
+
+.cont {
+  display: flex;
+
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+}
+
+.cont .banner {
+  background-image: url("../image/admission_banner.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  border-radius: 0.5rem;
+
+  width: 20vw;
+  height: 28vw;
+}
+
+.cont > img {
+  width: 2vw;
+}
+
+.banner .steps {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+  flex-shrink: 0;
+
+  margin: 1vw;
+}
+
+.banner .steps > div:nth-child(1) {
+  width: 5vw;
+  height: 2vw;
+  flex-shrink: 0;
+  margin: 0.5vw;
+  padding: 0.2vw;
+
+  color: #fff;
+  text-align: center;
+  font-family: Pretendard;
+  font-size: 1.2vw;
+  font-style: normal;
+  font-weight: 900;
+
+  border-radius: 6.25vw;
+  background: #145c93;
+}
+
+.banner .steps > div:nth-child(2) {
+  color: #145c93;
+  text-align: center;
+  font-family: Pretendard;
+  font-size: 1.875vw;
+  font-style: normal;
+  font-weight: 700;
+
+  margin: 1vw 1.5vw 1.5vw 1.5vw;
+}
+
+.banner .steps > div:nth-child(3) {
+  color: #333;
+  text-align: center;
+  font-family: Pretendard;
+  font-size: 1vw;
+  font-style: normal;
+  font-weight: 700;
+
+  margin: 0.5vw 1.5vw 1.5vw 1.5vw;
+}
+
+.banner a {
+  width: 15vw;
+  height: 3vw;
+  display: flex;
+  padding: 0.5625vw 2.5vw;
+  justify-content: center;
+  align-items: center;
+  margin: 0.5vw;
+
+  border-radius: 1.9375rem;
+  border: none;
+
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.1);
+
+  color: #fff;
+  text-align: center;
+  font-family: Pretendard;
+  font-size: 1vw;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+
+  cursor: pointer;
+}
+
+.banner a svg {
+    width: 1vw;
+}
+
+a#call {
+  gap: 0.8vw;
+  background: linear-gradient(
+      0deg,
+      rgba(2, 107, 0, 0.2) 0%,
+      rgba(2, 107, 0, 0) 91.13%
+    ),
+    #145c93;
+}
+
+a#naver {
+  gap: 2.5vw;
+  background: linear-gradient(
+      0deg,
+      rgba(2, 107, 0, 0.2) 0%,
+      rgba(2, 107, 0, 0) 91.13%
+    ),
+    #91c64c;
+}
+
+.steps .test {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  color: #333;
+  font-family: Pretendard;
+  font-size: 1vw;
+  font-style: normal;
+  font-weight: 500;
+
+  margin: 0.5vw;
+}
+
+.test div:nth-child(1) {
+  border-radius: 6.25rem;
+  width: 3vw;
+  margin-bottom: 0.5vw;
+
+  color: #fff;
+  text-align: center;
+  font-family: Pretendard;
+  font-size: 1vw;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.test #ele {
+  background: #fa9f3e;
+}
+
+.test #mid {
+  background: #90c64c;
+}
+
+.test b {
+  color: #145c93;
+  font-weight: 800;
+}
+
+#sub > div:last-child {
+  margin: 2vw 18vw 10vw 18.5vw;
+  text-align: start;
+
+  color: #000;
+  font-family: Pretendard;
+  font-size: 1vw;
+  font-style: normal;
+  font-weight: 500;
+}

@@ -1,0 +1,517 @@
+@font-face {
+  font-family: "Pretendard";
+  font-weight: 500;
+  font-style: normal;
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Medium.eot");
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Medium.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Medium.woff2")
+      format("woff2"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Medium.woff")
+      format("woff"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Medium.ttf")
+      format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Pretendard";
+  font-weight: 700;
+  font-style: normal;
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Bold.eot");
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Bold.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Bold.woff2")
+      format("woff2"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Bold.woff")
+      format("woff"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Bold.ttf")
+      format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Pretendard";
+  font-weight: 800;
+  font-style: normal;
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-ExtraBold.eot");
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-ExtraBold.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-ExtraBold.woff2")
+      format("woff2"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-ExtraBold.woff")
+      format("woff"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-ExtraBold.ttf")
+      format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "KOHIBaeum";
+  font-weight: normal;
+  font-style: normal;
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/kohi/KOHIBaeum.eot");
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/kohi/KOHIBaeum.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/kohi/KOHIBaeum.woff2")
+      format("woff2"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/kohi/KOHIBaeum.woff")
+      format("woff"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/kohi/KOHIBaeum.ttf")
+      format("truetype");
+  font-display: swap;
+}
+
+#sub {
+  width: 100vw;
+  text-align: center;
+}
+
+#sub > img {
+  width: 100vw;
+}
+
+.twin_tab {
+  background-color: #fff;
+}
+
+.twin_tab > button {
+  width: 15.625vw;
+  height: 2.5625vw;
+  flex-shrink: 0;
+
+  text-align: center;
+  font-family: Pretendard;
+  font-size: 1.25vw;
+  font-style: normal;
+  line-height: normal;
+
+  background: none;
+  border: none;
+
+  position: relative;
+  top: -1vw;
+}
+
+.twin_tab > button:nth-child(1) {
+  color: #145c93;
+  font-weight: 800;
+
+  border-bottom: 2px solid #145c93;
+}
+
+.twin_tab > button:nth-child(2) {
+  color: #404040;
+  font-weight: 500;
+}
+
+.string {
+  color: #145c93;
+  text-align: center;
+  font-family: Pretendard;
+  font-size: 1.5vw;
+  font-style: normal;
+  font-weight: 500;
+
+  padding: 2vw;
+  /* font-weight: 600; */
+}
+
+.Extab {
+  width: 100vw;
+  margin: 0 auto;
+  background-color: #fff;
+}
+.Extab .tab {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  list-style: none;
+  margin: 0 auto;
+  padding-top: 2vw;
+  padding-left: 1vw;
+  padding-right: 1vw;
+  border-radius: 30px 30px 0px 0px;
+  background: #fff;
+}
+
+.Extab .tab li:first-child {
+  padding-left: 12vw;
+}
+
+.Extab .tab li:last-child {
+  padding-right: 12vw;
+}
+
+.Extab .tab li {
+  display: inline-block;
+  border-bottom: 1px solid #145c93;
+}
+.Extab .tab li.is_on .btn {
+  color: #145c93;
+  text-align: center;
+  font-family: Pretendard;
+  font-size: 1vw;
+  font-style: normal;
+  font-weight: bold;
+
+  border: 1px solid #145c93;
+  border-bottom: 2px solid #fff;
+  opacity: 1;
+  background: #fff;
+}
+.Extab .tab .btn {
+  position: relative;
+  top: 1px;
+  width: 13vw;
+
+  padding-right: 1vw;
+  padding-left: 1vw;
+
+  color: #8a8f93;
+  text-align: center;
+  font-family: Pretendard;
+  font-size: 1vw;
+  font-style: normal;
+  font-weight: bold;
+
+  border-radius: 1rem 1rem 0rem 0rem;
+  border-top: 1px solid #c3c3c3;
+  border-right: 1px solid #c3c3c3;
+  border-left: 1px solid #c3c3c3;
+  opacity: 0.6;
+  background: #e0e0e0;
+}
+.Extab .cont_area {
+  margin: 10px auto;
+}
+.Extab .cont_area .cont {
+  display: none;
+  background: #fff;
+  color: #000;
+  text-align: center;
+  width: 100%;
+  padding-top: 20px;
+}
+
+.Extab .cont_area .is_on {
+  display: inherit;
+}
+
+.Extab .cont_area .cont > div {
+  display: flex;
+
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Extab .cont_area .cont > div > div {
+  margin: 2vw 0vw;
+}
+
+.cont .big_num_title {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+  flex-shrink: 0;
+}
+
+.cont .big_num_title div:nth-child(1) {
+  width: 4.5vw;
+  height: 1.5vw;
+  flex-shrink: 0;
+  margin: 0.5vw;
+
+  color: #fff;
+  text-align: center;
+  font-family: Pretendard;
+  font-size: 1vw;
+  font-style: normal;
+  font-weight: 900;
+
+  border-radius: 6.25vw;
+  background: #145c93;
+}
+
+.cont .big_num_title div:nth-child(2) {
+  color: #145c93;
+  text-align: center;
+  font-family: Pretendard;
+  font-size: 2vw;
+  font-style: normal;
+  font-weight: 600;
+
+  padding: 0.5vw;
+}
+
+.cont .big_num_title div:nth-child(3) {
+  color: #333;
+  text-align: center;
+  font-family: Pretendard;
+  font-size: 1.3vw;
+  font-style: normal;
+  font-weight: 500;
+
+  padding: 0.5vw;
+}
+
+.cont hr {
+  color: #ccc;
+  width: 62.5vw;
+  border-width: 0.15vw;
+}
+
+.cont .sub_string {
+  width: 59vw;
+  /* margin: 1vw; */
+  text-align: start;
+  color: #333;
+  font-family: Pretendard;
+  font-size: 1vw;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.cont h4 {
+  color: #145c93;
+  font-family: Pretendard;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.cont .tab_banner {
+  width: 75vw;
+  background-image: url("../image/tab_banner.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  border-radius: 0.5rem;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1vw 4vw 1vw 7vw;
+  margin: 5vw;
+}
+
+#big3 .tab_banner {
+  margin-bottom: 6vw;
+}
+
+#big4 .tab_banner {
+  display: flex;
+  flex-direction: column;
+
+  padding: 3vw 4vw 3vw 4vw;
+}
+
+#big3 .tab_banner div:nth-child(1) {
+  margin-right: 0vw;
+}
+
+#big4 .nums {
+  display: flex;
+  flex-direction: row;
+}
+
+#big4 .num {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 15vw;
+}
+
+#big4 .num > div:nth-child(1) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 7.5vw;
+  height: 7.5vw;
+  flex-shrink: 0;
+  /* margin: 4.5vw 0.5vw; */
+  border-radius: 4.6875rem;
+
+  color: #000;
+  text-align: center;
+  font-family: Pretendard;
+  font-size: 3vw;
+  font-style: normal;
+  font-weight: 700;
+}
+
+#big4 #num1 {
+  background: rgba(144, 198, 76, 0.7);
+}
+
+#big4 #num3 {
+  background: rgba(219, 226, 57, 0.6);
+}
+
+#big4 #num6 {
+  background: #ffcf7c;
+}
+
+#big4 .num > div:nth-child(2) {
+  color: #000;
+  text-align: center;
+  font-family: Pretendard;
+  font-size: 1vw;
+  font-style: normal;
+  font-weight: 500;
+
+  margin-top: 1vw;
+  height: 5vw;
+}
+
+.cont .tab_banner > div:nth-child(1) {
+  text-align: start;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  color: #000;
+  font-family: Pretendard;
+  font-size: 0.9vw;
+  font-style: normal;
+  font-weight: 500;
+  margin-right: 5vw;
+}
+
+.cont .tab_banner div:nth-child(2) {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.cont .tab_banner div img {
+  width: 10.3vw;
+  height: auto;
+  border-radius: 0.5rem;
+  border: 1px solid #ddd;
+  margin: 1vw;
+  margin-right: 2vw;
+
+  box-shadow: 3px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.cont .tab_banner div img#pyramid {
+  width: 24vw;
+  height: auto;
+  margin: 0vw;
+  margin-right: 5vw;
+
+  position: relative;
+  top: 4vw;
+
+  border: none;
+  box-shadow: none;
+}
+
+.cont .project div:nth-child(1) {
+  color: #333;
+  font-family: Pretendard;
+  font-size: 0.9vw;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.cont .project > img {
+  width: 70vw;
+  margin-top: 3vw;
+}
+
+.cont .project img.repeat {
+  width: 60vw;
+  margin-top: 3vw;
+}
+
+.cont .project div:nth-child(2) {
+  padding-top: 1vw;
+}
+
+.cont .project > div > img {
+  width: 18vw;
+  margin: 1vw;
+}
+
+.cont .simple img {
+  width: 80vw;
+  margin-top: 1vw;
+}
+
+.cont .simple2 img {
+  width: 60vw;
+  margin-top: 1vw;
+}
+
+.cont .tab_banner .lecture {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 9vw;
+  height: 7.5vw;
+  flex-shrink: 0;
+  margin: 4.5vw 0.5vw;
+  border-radius: 4.6875rem;
+
+  color: #000;
+  text-align: center;
+  font-family: Pretendard;
+  font-size: 1vw;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.cont .tab_banner .green {
+  background: rgba(144, 198, 76, 0.7);
+}
+
+.cont .tab_banner .light {
+  background: rgba(219, 226, 57, 0.6);
+}
+
+.half_banner {
+  display: grid;
+  grid-template-columns: 32fr 54fr;
+
+  width: 75vw;
+  margin: 1vw;
+}
+
+.half_banner > img {
+  width: 28vw;
+}
+
+.half_banner .description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: start;
+
+  padding: 2vw 5vw;
+  background: #f5f9f9;
+}
+
+.half_banner .description > div:nth-child(1) {
+  color: #000;
+  font-family: Pretendard;
+  font-size: 1vw;
+  font-style: normal;
+  font-weight: 700;
+
+  margin-bottom: 1.8vw;
+}
+
+.half_banner .description > div:nth-child(2) {
+  color: #000;
+  font-family: Pretendard;
+  font-size: 0.8vw;
+  font-style: normal;
+  font-weight: 500;
+}

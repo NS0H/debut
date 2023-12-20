@@ -1,0 +1,155 @@
+@font-face {
+  font-family: "Pretendard";
+  font-weight: 500;
+  font-style: normal;
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Medium.eot");
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Medium.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Medium.woff2")
+      format("woff2"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Medium.woff")
+      format("woff"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Medium.ttf")
+      format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Pretendard";
+  font-weight: 700;
+  font-style: normal;
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Bold.eot");
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Bold.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Bold.woff2")
+      format("woff2"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Bold.woff")
+      format("woff"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Bold.ttf")
+      format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Pretendard";
+  font-weight: 800;
+  font-style: normal;
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-ExtraBold.eot");
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-ExtraBold.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-ExtraBold.woff2")
+      format("woff2"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-ExtraBold.woff")
+      format("woff"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-ExtraBold.ttf")
+      format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "KOHIBaeum";
+  font-weight: normal;
+  font-style: normal;
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/kohi/KOHIBaeum.eot");
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/kohi/KOHIBaeum.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/kohi/KOHIBaeum.woff2")
+      format("woff2"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/kohi/KOHIBaeum.woff")
+      format("woff"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/kohi/KOHIBaeum.ttf")
+      format("truetype");
+  font-display: swap;
+}
+
+#sub {
+  width: 100vw;
+  text-align: center;
+}
+
+#sub > img:nth-child(1) {
+  width: 100vw;
+}
+
+.twin_tab {
+  background-color: #fff;
+}
+
+.twin_tab > button {
+  width: 15.625vw;
+  height: 2.5625vw;
+  flex-shrink: 0;
+
+  text-align: center;
+  font-family: Pretendard;
+  font-size: 1.25vw;
+  font-style: normal;
+  line-height: normal;
+
+  background: none;
+  border: none;
+
+  position: relative;
+  top: -1vw;
+}
+
+.twin_tab > button:nth-child(1) {
+  color: #404040;
+  font-weight: 500;
+}
+
+.twin_tab > button:nth-child(2) {
+  color: #145c93;
+  font-weight: 800;
+
+  border-bottom: 2px solid #145c93;
+}
+
+.string {
+  color: #145c93;
+  text-align: center;
+  font-family: Pretendard;
+  font-size: 1.5vw;
+  font-style: normal;
+  font-weight: 700;
+
+  padding: 2vw;
+  /* font-weight: 600; */
+}
+
+.cont {
+  display: flex;
+
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+#table {
+  width: 75vw;
+}
+
+.tab_banner {
+  width: 75vw;
+  background-image: url("../image/tab_banner.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  border-radius: 0.5rem;
+  text-align: start;
+
+  padding: 4vw 9vw 4vw 9vw;
+  margin: 5vw;
+
+  color: #000;
+  font-family: Pretendard;
+  font-size: 1vw;
+  font-style: normal;
+  font-weight: 500;
+}
+
+h4 {
+  color: #145c93;
+  font-family: Pretendard;
+  font-style: normal;
+  font-weight: 700;
+}

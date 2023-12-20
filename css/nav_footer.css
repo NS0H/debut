@@ -1,0 +1,193 @@
+@font-face {
+  font-family: "Pretendard";
+  font-weight: 500;
+  font-style: normal;
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Medium.eot");
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Medium.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Medium.woff2")
+      format("woff2"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Medium.woff")
+      format("woff"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Medium.ttf")
+      format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Pretendard";
+  font-weight: 700;
+  font-style: normal;
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Bold.eot");
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Bold.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Bold.woff2")
+      format("woff2"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Bold.woff")
+      format("woff"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Bold.ttf")
+      format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Pretendard";
+  font-weight: 800;
+  font-style: normal;
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-ExtraBold.eot");
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-ExtraBold.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-ExtraBold.woff2")
+      format("woff2"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-ExtraBold.woff")
+      format("woff"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-ExtraBold.ttf")
+      format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "KOHIBaeum";
+  font-weight: normal;
+  font-style: normal;
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/kohi/KOHIBaeum.eot");
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/kohi/KOHIBaeum.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/kohi/KOHIBaeum.woff2")
+      format("woff2"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/kohi/KOHIBaeum.woff")
+      format("woff"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/kohi/KOHIBaeum.ttf")
+      format("truetype");
+  font-display: swap;
+}
+
+b {
+  font-weight: 800;
+}
+
+nav {
+  display: flex;
+  padding: 1vw 12vw;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  row-gap: 20.5vw;
+  flex-wrap: wrap;
+
+  border-bottom: 1px solid #145c93;
+  background: #fff;
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.1);
+}
+
+nav > div {
+  width: 27.0625vw;
+  height: 1.5rem;
+  flex-shrink: 0;
+}
+
+.blank {
+  width: 10rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #145c93; /* 마우스 오버시 글자 색상 변경 */
+}
+
+#logo {
+  width: 12.4vw;
+  /* height: 3.75rem; */
+  flex-shrink: 0;
+}
+
+.menu {
+  color: #333;
+  font-family: Pretendard;
+  font-size: 1.25vw;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  padding: 0px 5% 0px 5%;
+}
+
+/* #login {
+    color: #000;
+    font-family: Pretendard;
+    font-size: 1vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  
+    width: 6.5vw;
+    height: 1.8125vw;
+    flex-shrink: 0;
+  
+    border-radius: 0.90625rem;
+    border-color: #145c93;
+    background: #145c93;
+    border-style: solid;
+  }
+  
+  #login > span {
+    width: 2.8125vw;
+    color: #fff;
+    font-family: Pretendard;
+    font-size: 1vw;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+  
+  #login > img {
+    width: 1.06875vw;
+    flex-shrink: 0;
+  } */
+
+/* FOOTER */
+footer {
+  display: flex;
+  width: 100vw;
+  margin-top: 3vw;
+  padding: 2vw 16vw;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  row-gap: 20.5vw;
+  flex-wrap: wrap;
+
+  border-top: 1px solid #ddd;
+  background: #fff;
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.1);
+}
+
+footer > #logo {
+  width: 10.82694vw;
+  flex-shrink: 0;
+}
+
+footer > div {
+  color: #777;
+  font-family: Pretendard;
+  font-size: 1vw;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+footer > span > span {
+  color: #999;
+  font-family: Pretendard;
+  font-size: 1vw;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+footer > #glory {
+  width: 7.5525vw;
+  flex-shrink: 0;
+}
