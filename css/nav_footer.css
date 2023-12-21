@@ -66,6 +66,27 @@ b {
   font-weight: 800;
 }
 
+#scrollToTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #135c93;
+  color: #fff;
+  font-family: KOHIBaeum;
+  font-weight: 500;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5rem;
+  padding: 0.8rem;
+  cursor: pointer;
+}
+
+#scrollToTopBtn:hover {
+  background-color: #fff;
+  color: #135c93;
+}
+
 nav {
   display: flex;
   padding: 1rem 12rem;
@@ -111,7 +132,7 @@ nav a:hover {
   font-style: normal;
   font-weight: 500;
   line-height: normal;
-  padding: 0px 5% 0px 5%;
+  padding: 1rem;
 }
 
 /* #login {

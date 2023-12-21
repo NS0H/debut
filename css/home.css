@@ -65,30 +65,78 @@
 /* SLIDE IMAGE */
 .outer {
   display: flex;
-  width: 100rem;
+  width: 100%;
   flex-direction: column;
   margin: 0 auto;
   overflow-x: hidden;
 }
 
-.inner-list {
+/* .inner-list {
   display: flex;
   flex-direction: row;
   transition: transform 0.5s ease-in-out;
-}
+} */
 
 .inner {
   height: auto;
   box-sizing: border-box;
 }
 
-.inner > img {
-  width: 100rem;
+.inner > div {
+  width: 120rem;
+  height: 40rem;
+  background-image: url("../image/visual/main_visual.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+
+  padding: 15rem;
+
   display: block;
   object-fit: contain;
 }
 
-.button-list {
+.copy {
+  color: #fff;
+  text-shadow: 3px 4px 12px rgba(0, 0, 0, 0.25);
+  font-family: KOHIBaeum;
+  font-size: 3.75rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+
+  padding: 0.5rem;
+
+  animation: flyIn 1.5s ease-out;
+}
+
+.copy y {
+  color: #ffd12e;
+}
+
+.copy_small {
+  color: #fff;
+  text-shadow: 3px 4px 12px rgba(0, 0, 0, 0.25);
+  font-family: Pretendard;
+  font-size: 1.875rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+
+  padding: 0.5rem;
+
+  animation: flyIn 1.5s ease-out;
+}
+
+@keyframes flyIn {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* .button-list {
   position: relative;
   top: -5rem;
   display: flex;
@@ -114,7 +162,7 @@ hr {
   width: 4.4375rem;
   height: 0.0625rem;
   color: #fff;
-}
+} */
 
 #big4,
 #banner,
@@ -131,7 +179,7 @@ hr {
 /* BIG4 */
 #big4 > div {
   width: 75rem;
-  height: auto;
+  height: 42rem;
   background-image: url("../image/big4_wide.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -183,19 +231,24 @@ hr {
 #banner {
   gap: 1rem;
   flex-shrink: 0;
+  height: 20.5rem;
 }
 
 #banner > div {
   width: 75rem;
+  height: 16.5rem;
   background-image: url("../image/banner_source.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   border-radius: 0.5rem;
+
+  display: flex;
+  align-items: center;
 }
 
 #banner > div > div {
   display: flex;
-  padding: 5rem 3.75rem;
+  padding: 0rem 3.75rem;
   flex-direction: column;
 
   cursor: pointer;
@@ -241,15 +294,19 @@ hr {
   flex-direction: row;
   justify-content: center;
   flex-shrink: 0;
+
+  height: 13rem;
 }
 
 #twin_banner > div {
   display: inline-flex;
   width: 36.5rem;
-  padding: 3rem 2.5rem;
+  height: 9rem;
+  padding: 0rem 2.5rem;
   flex-direction: column;
   align-items: flex-start;
   flex-shrink: 0;
+  justify-content: center;
 
   background-repeat: no-repeat;
   background-size: 100% 100%;

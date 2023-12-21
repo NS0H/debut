@@ -26,6 +26,7 @@
     <link href="./css/nav_footer.css" rel="stylesheet" />
   </head>
   <body>
+    <button id="scrollToTopBtn" onclick="scrollToTop()">Top</button>
     <!-- MENU -->
     <nav>
       <a href="./index.html">
@@ -45,22 +46,23 @@
 
     <!-- Slide Image -->
     <div class="outer">
-      <div class="inner-list">
-        <div class="inner">
-          <img
-            class="slide"
-            src="./image/home_main.png"
-            style="width: 100rem"
-          />
+      <!-- <div class="inner-list"> -->
+      <div class="inner">
+        <div class="slide" src="./image/home_main.png">
+          <div class="copy">작은 목표의 <y>놀라운 힘!</y></div>
+          <div class="copy_small">
+            초1~ 중3 학습 프로젝트 전문 영어, 데뷰영어학원
+          </div>
         </div>
-        <div class="inner">
+      </div>
+      <!-- <div class="inner">
           <img class="slide" src="./image/logo_gray.png" />
         </div>
         <div class="inner">
           <img class="slide" src="" />
         </div>
-      </div>
-      <div class="button-list">
+      </div> -->
+      <!-- <div class="button-list">
         <button class="button-left">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -86,7 +88,7 @@
             <path d="M1 17L9 9L1 0.999998" stroke="white" />
           </svg>
         </button>
-      </div>
+      </div> -->
     </div>
 
     <!-- Big 4 -->
@@ -132,7 +134,11 @@
     </div>
     <!-- Banner -->
     <div id="banner">
-      <div>
+      <div
+        id="admission"
+        onmouseover="changeSize1(true)"
+        onmouseout="changeSize1(false)"
+      >
         <div onclick="toAdmission()">
           <div>데뷰가 처음이신가요?</div>
           <div>입학절차를 안내드립니다.</div>
@@ -143,13 +149,23 @@
 
     <!-- 2 Banner -->
     <div id="twin_banner">
-      <div id="element" onclick="toCurri1()">
+      <div
+        id="element"
+        onmouseover="changeSize2(true)"
+        onmouseout="changeSize2(false)"
+        onclick="toCurri1()"
+      >
         <div>
           <div>초등부 커리큘럼</div>
           <div>Elementary School Curriculum</div>
         </div>
       </div>
-      <div id="middle" onclick="toCurri2()">
+      <div
+        id="middle"
+        onmouseover="changeSize3(true)"
+        onmouseout="changeSize3(false)"
+        onclick="toCurri2()"
+      >
         <div>
           <div>중등부 커리큘럼</div>
           <div>Middle School Curriculum</div>
@@ -162,7 +178,7 @@
       <img id="logo" src="./image/logo_gray.png" />
       <div>
         <b>데뷰 영어학원</b> | 학원 등록 번호 : 0000 <br />
-        서울특별시 양천구 신목로 38 202호 | Tel : 02-695-1131
+        서울특별시 양천구 신목로 38 202호 | Tel :  02-6952-1131
       </div>
       <div class="blank"></div>
       <span>
@@ -172,5 +188,6 @@
     </footer>
 
     <script src="./js/home.js"></script>
+    <script src="./js/nav_footer.js"></script>
   </body>
 </html>

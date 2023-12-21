@@ -62,6 +62,11 @@
   font-display: swap;
 }
 
+nav .menu:nth-child(1){
+  color: #145c93;
+  border-bottom: 2px solid #145c93;
+}
+
 #sub {
   width: 100rem;
   display: flex;
@@ -79,6 +84,8 @@
 
 .twin_tab {
   background-color: #fff;
+  border-radius: 1.875rem;
+  width: 75rem;
 }
 
 .twin_tab > button {
