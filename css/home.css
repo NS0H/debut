@@ -80,6 +80,7 @@
 .inner {
   height: auto;
   box-sizing: border-box;
+  overflow: hidden;
 }
 
 .inner > div {
@@ -93,6 +94,20 @@
 
   display: block;
   object-fit: contain;
+
+  animation: zoomIn 8s ease-in-out;
+}
+
+@keyframes zoomIn {
+  0% {
+    transform: scale(1.2); /* 초기 크기: 100% */
+  }
+  /* 50% {
+    transform: scale(1.2); 중간 크기: 150%
+  } */
+  100% {
+    transform: scale(1); /* 최종 크기: 100% */
+  }
 }
 
 .copy {
@@ -106,7 +121,7 @@
 
   padding: 0.5rem;
 
-  animation: flyIn 1.5s ease-out;
+  animation: flyIn 2s ease-out;
 }
 
 .copy y {
@@ -217,6 +232,8 @@ hr {
 }
 
 .image_button {
+  width: 17rem;
+  height: 25rem;
   border: none;
   background: none;
   cursor: pointer;
@@ -294,11 +311,20 @@ hr {
   flex-direction: row;
   justify-content: center;
   flex-shrink: 0;
+  gap: 0rem;
 
   height: 13rem;
 }
 
 #twin_banner > div {
+  display: flex;
+  justify-content: center;
+
+  width: 38rem;
+  height: 10rem;
+}
+
+#twin_banner > div > div {
   display: inline-flex;
   width: 36.5rem;
   height: 9rem;
@@ -323,7 +349,7 @@ hr {
   background-image: url("../image/mid_banner_src.png");
 }
 
-#twin_banner > div > div > div {
+#twin_banner > div > div > div > div {
   color: #fff;
   text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
   font-family: Pretendard;
@@ -333,6 +359,6 @@ hr {
   font-weight: 700;
 }
 
-#twin_banner > div > div > div:nth-child(2) {
+#twin_banner > div > div > div > div:nth-child(2) {
   font-size: 1rem;
 }
