@@ -171,7 +171,6 @@ nav a:hover {
 /* FOOTER */
 footer {
   display: flex;
-  width: 100%;
   margin-top: 3rem;
   padding: 2rem 16rem;
   justify-content: space-between;
