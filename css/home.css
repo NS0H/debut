@@ -182,6 +182,19 @@ hr {
   color: #fff;
 } */
 
+#big4,
+#banner,
+#twin_banner {
+  width: 100rem;
+  display: flex;
+  padding: 1.5rem 5.9375rem;
+  margin: 0 auto;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
 #big4 > div {
   width: 75rem;
   height: 42rem;
