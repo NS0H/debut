@@ -182,16 +182,19 @@ hr {
   color: #fff;
 } */
 
-#big4,
-#banner,
-#twin_banner {
-  width: 100rem;
-  display: flex;
-  padding: 1.5rem 5.9375rem;
-  margin: 0 auto;
+#big4 > div {
+  width: 75rem;
+  height: 42rem;
+  background-image: url("./image/big4_wide.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  border-radius: 0.5rem;
+
+  display: inline-flex;
+  padding: 5rem 2rem;
   flex-direction: column;
   align-items: center;
-  gap: 2rem;
+  gap: 1rem;
 }
 
 /* BIG4 */
@@ -322,6 +325,7 @@ hr {
 #twin_banner > div {
   display: flex;
   justify-content: center;
+  align-items: center;
 
   width: 38rem;
   height: 10rem;
