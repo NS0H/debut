@@ -100,11 +100,11 @@
 
 @keyframes zoomIn {
   0% {
-    transform: scale(1.2); /* 초기 크기: 100% */
+    transform: scale(1); /* 초기 크기: 100% */
   }
-  /* 50% {
-    transform: scale(1.2); 중간 크기: 150%
-  } */
+  50% {
+    transform: scale(1.2);
+  }
   100% {
     transform: scale(1); /* 최종 크기: 100% */
   }
@@ -121,7 +121,7 @@
 
   padding: 0.5rem;
 
-  animation: flyIn 2s ease-out;
+  animation: fadeIn 3s ease-out;
 }
 
 .copy y {
@@ -139,15 +139,18 @@
 
   padding: 0.5rem;
 
-  animation: flyIn 1.5s ease-out;
+  animation: fadeIn 2s ease-out;
 }
 
-@keyframes flyIn {
+@keyframes fadeIn {
   0% {
-    transform: translateY(-100%);
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 0.7;
   }
   100% {
-    transform: translateY(0);
+    opacity: 1;
   }
 }
 
