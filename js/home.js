@@ -39,40 +39,40 @@
 function changeImage1(isHovered) {
   const buttonImage = document.getElementById("bt_img1");
   if (isHovered) {
-    buttonImage.src = "../image/big01_over.png"; // 마우스 오버시 이미지 변경
+    buttonImage.src = "./image/big01_over.png"; // 마우스 오버시 이미지 변경
     buttonImage.style.width = "16rem";
   } else {
-    buttonImage.src = "../image/big01.png"; // 마우스 아웃시 이미지 원래대로 변경
+    buttonImage.src = "./image/big01.png"; // 마우스 아웃시 이미지 원래대로 변경
     buttonImage.style.width = "15rem";
   }
 }
 function changeImage2(isHovered) {
   const buttonImage = document.getElementById("bt_img2");
   if (isHovered) {
-    buttonImage.src = "../image/big02_over.png"; // 마우스 오버시 이미지 변경
+    buttonImage.src = "./image/big02_over.png"; // 마우스 오버시 이미지 변경
     buttonImage.style.width = "16rem";
   } else {
-    buttonImage.src = "../image/big02.png"; // 마우스 아웃시 이미지 원래대로 변경
+    buttonImage.src = "./image/big02.png"; // 마우스 아웃시 이미지 원래대로 변경
     buttonImage.style.width = "15rem";
   }
 }
 function changeImage3(isHovered) {
   const buttonImage = document.getElementById("bt_img3");
   if (isHovered) {
-    buttonImage.src = "../image/big03_over.png"; // 마우스 오버시 이미지 변경
+    buttonImage.src = "./image/big03_over.png"; // 마우스 오버시 이미지 변경
     buttonImage.style.width = "16rem";
   } else {
-    buttonImage.src = "../image/big03.png"; // 마우스 아웃시 이미지 원래대로 변경
+    buttonImage.src = "./image/big03.png"; // 마우스 아웃시 이미지 원래대로 변경
     buttonImage.style.width = "15rem";
   }
 }
 function changeImage4(isHovered) {
   const buttonImage = document.getElementById("bt_img4");
   if (isHovered) {
-    buttonImage.src = "../image/big04_over.png"; // 마우스 오버시 이미지 변경
+    buttonImage.src = "./image/big04_over.png"; // 마우스 오버시 이미지 변경
     buttonImage.style.width = "16rem";
   } else {
-    buttonImage.src = "../image/big04.png"; // 마우스 아웃시 이미지 원래대로 변경
+    buttonImage.src = "./image/big04.png"; // 마우스 아웃시 이미지 원래대로 변경
     buttonImage.style.width = "15rem";
   }
 }
@@ -111,35 +111,35 @@ function changeSize3(isHovered) {
 }
 
 function toDebut() {
-  window.location.href = "../debut.html";
+  window.location.href = "./debut.html";
 }
 
 function toDebut1() {
-  window.location.href = "../debut.html#big1";
+  window.location.href = "./debut.html#big1";
 }
 
 function toDebut2() {
-  window.location.href = "../debut.html#big2";
+  window.location.href = "./debut.html#big2";
 }
 
 function toDebut3() {
-  window.location.href = "../debut.html#big3";
+  window.location.href = "./debut.html#big3";
 }
 
 function toDebut4() {
-  window.location.href = "../debut.html#big4";
+  window.location.href = "./debut.html#big4";
 }
 
 function toAdmission() {
-  window.location.href = "../admission.html";
+  window.location.href = "./admission.html";
 }
 
 function toCurri1() {
-  window.location.href = "../curriculum.html#element";
+  window.location.href = "./curriculum.html#element";
 }
 
 function toCurri2() {
-  window.location.href = "../curriculum.html#middle";
+  window.location.href = "./curriculum.html#middle";
 }
 
 // 초기 로딩 시
