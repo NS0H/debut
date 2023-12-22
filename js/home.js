@@ -37,76 +37,90 @@
 // });
 
 function changeImage1(isHovered) {
-  const buttonImage = document.getElementById("bt_img1");
-  if (isHovered) {
-    buttonImage.src = "./image/big01_over.png"; // 마우스 오버시 이미지 변경
-    buttonImage.style.width = "16rem";
-  } else {
-    buttonImage.src = "./image/big01.png"; // 마우스 아웃시 이미지 원래대로 변경
-    buttonImage.style.width = "15rem";
+  if (window.innerWidth > 768) {
+    const buttonImage = document.getElementById("bt_img1");
+    if (isHovered) {
+      buttonImage.src = "./image/big01_over.png"; // 마우스 오버시 이미지 변경
+      buttonImage.style.width = "16rem";
+    } else {
+      buttonImage.src = "./image/big01.png"; // 마우스 아웃시 이미지 원래대로 변경
+      buttonImage.style.width = "15rem";
+    }
   }
 }
 function changeImage2(isHovered) {
-  const buttonImage = document.getElementById("bt_img2");
-  if (isHovered) {
-    buttonImage.src = "./image/big02_over.png"; // 마우스 오버시 이미지 변경
-    buttonImage.style.width = "16rem";
-  } else {
-    buttonImage.src = "./image/big02.png"; // 마우스 아웃시 이미지 원래대로 변경
-    buttonImage.style.width = "15rem";
+  if (window.innerWidth > 768) {
+    const buttonImage = document.getElementById("bt_img2");
+    if (isHovered) {
+      buttonImage.src = "./image/big02_over.png"; // 마우스 오버시 이미지 변경
+      buttonImage.style.width = "16rem";
+    } else {
+      buttonImage.src = "./image/big02.png"; // 마우스 아웃시 이미지 원래대로 변경
+      buttonImage.style.width = "15rem";
+    }
   }
 }
 function changeImage3(isHovered) {
-  const buttonImage = document.getElementById("bt_img3");
-  if (isHovered) {
-    buttonImage.src = "./image/big03_over.png"; // 마우스 오버시 이미지 변경
-    buttonImage.style.width = "16rem";
-  } else {
-    buttonImage.src = "./image/big03.png"; // 마우스 아웃시 이미지 원래대로 변경
-    buttonImage.style.width = "15rem";
+  if (window.innerWidth > 768) {
+    const buttonImage = document.getElementById("bt_img3");
+    if (isHovered) {
+      buttonImage.src = "./image/big03_over.png"; // 마우스 오버시 이미지 변경
+      buttonImage.style.width = "16rem";
+    } else {
+      buttonImage.src = "./image/big03.png"; // 마우스 아웃시 이미지 원래대로 변경
+      buttonImage.style.width = "15rem";
+    }
   }
 }
 function changeImage4(isHovered) {
-  const buttonImage = document.getElementById("bt_img4");
-  if (isHovered) {
-    buttonImage.src = "./image/big04_over.png"; // 마우스 오버시 이미지 변경
-    buttonImage.style.width = "16rem";
-  } else {
-    buttonImage.src = "./image/big04.png"; // 마우스 아웃시 이미지 원래대로 변경
-    buttonImage.style.width = "15rem";
+  if (window.innerWidth > 768) {
+    const buttonImage = document.getElementById("bt_img4");
+    if (isHovered) {
+      buttonImage.src = "./image/big04_over.png"; // 마우스 오버시 이미지 변경
+      buttonImage.style.width = "16rem";
+    } else {
+      buttonImage.src = "./image/big04.png"; // 마우스 아웃시 이미지 원래대로 변경
+      buttonImage.style.width = "15rem";
+    }
   }
 }
 
 function changeSize1(isHovered) {
-  const banner1 = document.getElementById("admission");
-  if (isHovered) {
-    banner1.style.width = "76rem";
-    banner1.style.height = "17.5rem";
-  } else {
-    banner1.style.width = "75rem";
-    banner1.style.height = "16.5rem";
+  if (window.innerWidth > 768) {
+    const banner1 = document.getElementById("admission");
+    if (isHovered) {
+      banner1.style.width = "76rem";
+      banner1.style.height = "17.5rem";
+    } else {
+      banner1.style.width = "75rem";
+      banner1.style.height = "16.5rem";
+    }
   }
 }
 
 function changeSize2(isHovered) {
-  const banner2 = document.getElementById("element");
-  if (isHovered) {
-    banner2.style.width = "37.5rem";
-    banner2.style.height = "10rem";
-  } else {
-    banner2.style.width = "36.5rem";
-    banner2.style.height = "9rem";
+  if (window.innerWidth > 768) {
+    const banner2 = document.getElementById("element");
+    if (isHovered) {
+      banner2.style.width = "37.5rem";
+      banner2.style.height = "10rem";
+    } else {
+      banner2.style.width = "36.5rem";
+      banner2.style.height = "9rem";
+    }
   }
 }
 
 function changeSize3(isHovered) {
-  const banner3 = document.getElementById("middle");
-  if (isHovered) {
-    banner3.style.width = "37.5rem";
-    banner3.style.height = "10rem";
-  } else {
-    banner3.style.width = "36.5rem";
-    banner3.style.height = "9rem";
+  if (window.innerWidth > 768) {
+    const banner3 = document.getElementById("middle");
+    if (isHovered) {
+      banner3.style.width = "37.5rem";
+      banner3.style.height = "10rem";
+    } else {
+      banner3.style.width = "36.5rem";
+      banner3.style.height = "9rem";
+    }
   }
 }
 
