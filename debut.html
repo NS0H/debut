@@ -44,13 +44,47 @@
         <a class="menu" href="./admission.html">입학절차</a>
         <a class="menu" href="./curriculum.html">커리큘럼</a>
       </div>
+      <button id="m_menu">
+        <img src="./image/m_menu.png" onclick="toggleMenu()"/>
+        
+        <div id="mobile-menu">
+          <ul>
+            <li><a href="./debut.html">DEBUT</a>
+              <div>
+              <img id="vector1" src="./image/vector.png" onclick="toggleSubMenu1()" /></div>
+              <ul id="debut" class="submenu">
+                <li><a href="./debut.html">DEBUT</a>
+                  <ul class="sub-submenu">
+                    <li><a href="./debut.html#big1">프로젝트에 강한 영어</a></li>
+                    <li><a href="./debut.html#big2">시험에 강한 영어</a></li>
+                    <li><a href="./debut.html#big3">반복 영어</a></li>
+                    <li><a href="./debut.html#big4">관리 및 평가시스템</a></li>
+                  </ul>
+                </li>
+                <li><a href="./comparing.html">차별성</a></li>
+              </ul>
+            </li>
+            <li><a href="./admission.html">입학절차</a></li>
+            <li><a href="./curriculum.html">커리큘럼</a>
+              <div><img id="vector2" src="./image/vector.png" onclick="toggleSubMenu2()" /></div>
+              <ul id="curri" class="submenu">
+                <li><a href="./curriculum.html#element">초등과정</a></li>
+                <li><a href="./curriculum.html#middle">중등과정</a></li>
+              </ui>
+            </li>
+          </ul>
+        </div>
+      </button>
       <!-- <button id="login">
         <img src="/image/login_bt.png" />
         <span>로그인</span>
       </button> -->
     </nav>
     <div id="sub">
-      <img src="./image/debut_main.png" />
+      <div id="main">
+        <div id="m_main">DEBUT</div>
+        <img id="main_img" src="./image/debut_main.png" />
+      </div>
       <div class="twin_tab">
         <button onclick="toDebut()">DEBUT</button>
         <button onclick="toComparing()">차별성</button>
@@ -63,7 +97,9 @@
       <div class="Extab">
         <ul class="tab">
           <li class="is_on">
-            <a href="#big1" id="big1_btn" class="btn">프로젝트로 완성하는 영어</a>
+            <a href="#big1" id="big1_btn" class="btn"
+              >프로젝트로 완성하는 영어</a
+            >
           </li>
           <li>
             <a href="#big2" id="big2_btn" class="btn">시험에 강한 영어</a>
@@ -84,7 +120,8 @@
                 <div>BIG 1</div>
                 <div>프로젝트로 완성하는 영어</div>
                 <div>
-                  수업과 프로젝트의 융합으로 언어의 전영역 학습 효과를 배가
+                  수업과 프로젝트의 융합으로<br />
+                  언어의 전영역 학습 효과를 배가
                 </div>
               </div>
               <hr />
@@ -113,18 +150,18 @@
               <div class="project">
                 <div>
                   <h4>초등수업 : 프로젝트</h4>
-                  흥미로운 수업과 프로젝트, 학습 미션 연계로
+                  흥미로운 수업과 프로젝트, 학습 미션 연계로<br id="mobile" />
                   <b>탄탄한 기본기</b>와 <b>창의성</b>을 동시에 확보합니다.
                 </div>
-                <img src="./image/ele_project.png" />
+                <img id="eleproject_img" src="./image/ele_project.png" />
               </div>
               <div class="simple">
                 <h4>프로젝트</h4>
-                <img src="./image/project.png" />
+                <img id="project_img" src="./image/project.png" />
               </div>
               <div class="simple">
                 <h4>미션</h4>
-                <img src="./image/mission.png" />
+                <img id="mission_img" src="./image/mission.png" />
               </div>
             </div>
           </div>
@@ -154,7 +191,7 @@
                   • 수능 지문 직독직해와 오답노트 정리로 완성<br />
                   • 체계적인 데뷰 포트폴리오로 학습 영어 완성<br />
                 </div>
-                <div>
+                <div class="lectures">
                   <div class="lecture green">
                     어학능력시험<br />
                     토셀/토플
@@ -179,7 +216,7 @@
                   학교 수행, 내신, 수능 등 국내 시험 영어를 대비하는 훈련
                   프로그램으로 구성됩니다.
                 </div>
-                <img src="./image/mid_project.png" />
+                <img id="midproject_img" src="./image/mid_project.png" />
               </div>
               <div class="project">
                 <div>
@@ -195,7 +232,7 @@
               </div>
               <div class="simple2">
                 <h4>어려운 시험에서도 빛나는 데뷰 내신</h4>
-                <img src="./image/debut_mid_table.png" />
+                <img id="debut_midtable" src="./image/debut_mid_table.png" />
               </div>
             </div>
           </div>
@@ -234,20 +271,31 @@
               <div class="project">
                 <div>
                   <h4>초등부 4단계 복습과정</h4>
-                  초등부는 탄탄한 어학 기본기를 쌓으며, 다양한 프로젝트로
-                  창의적인 학습 역량을 마스터하는 과정입니다.<br />다양한
-                  방법으로 복습하여 지루함을 예방하고, 자연스럽게 복습합니다.
+                  초등부는 탄탄한 어학 기본기를 쌓으며,<br id="mobile" />
+                  다양한 프로젝트로 창의적인 학습 역량을 마스터하는
+                  과정입니다.<br />
+                  다양한 방법으로 복습하여 지루함을 예방하고, 자연스럽게
+                  복습합니다.
                 </div>
-                <img class="repeat" src="./image/repeat_ele.png" />
+                <img
+                  id="repeat_ele"
+                  class="repeat"
+                  src="./image/repeat_ele.png"
+                />
               </div>
               <div class="project">
                 <div>
                   <h4>중등부 3단계 복습과정</h4>
-                  중등부는 시험에 강한 학습역량을 형성하여, 중등
-                  수행/내신/수능을 조기마스터 하는 과정입니다.<br />기준점에
-                  미달한 학생들은 전문학습 코칭과 관리로 완성도를 높입니다.
+                  중등부는 시험에 강한 학습역량을 형성하여,<br id="mobile" />
+                  중등 수행/내신/수능을 조기마스터 하는 과정입니다.<br />
+                  기준점에 미달한 학생들은 전문학습 코칭과 관리로 완성도를
+                  높입니다.
                 </div>
-                <img class="repeat" src="./image/repeat_mid.png" />
+                <img
+                  id="repeat_mid"
+                  class="repeat"
+                  src="./image/repeat_mid.png"
+                />
               </div>
             </div>
           </div>
@@ -349,7 +397,7 @@
       <img id="logo" src="./image/logo_gray.png" />
       <div>
         <b>데뷰 영어학원</b> | 학원 등록 번호 : 0000 <br />
-        서울특별시 양천구 신목로 38 202호 | Tel :  02-6952-1131
+        서울특별시 양천구 신목로 38 202호 | Tel : 02-6952-1131
       </div>
       <div class="blank"></div>
       <span>

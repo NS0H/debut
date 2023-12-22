@@ -44,13 +44,47 @@
         <a class="menu" href="./admission.html">입학절차</a>
         <a class="menu" href="./curriculum.html">커리큘럼</a>
       </div>
+      <button id="m_menu">
+        <img src="./image/m_menu.png" onclick="toggleMenu()"/>
+        
+        <div id="mobile-menu">
+          <ul>
+            <li><a href="./debut.html">DEBUT</a>
+              <div>
+              <img id="vector1" src="./image/vector.png" onclick="toggleSubMenu1()" /></div>
+              <ul id="debut" class="submenu">
+                <li><a href="./debut.html">DEBUT</a>
+                  <ul class="sub-submenu">
+                    <li><a href="./debut.html#big1">프로젝트에 강한 영어</a></li>
+                    <li><a href="./debut.html#big2">시험에 강한 영어</a></li>
+                    <li><a href="./debut.html#big3">반복 영어</a></li>
+                    <li><a href="./debut.html#big4">관리 및 평가시스템</a></li>
+                  </ul>
+                </li>
+                <li><a href="./comparing.html">차별성</a></li>
+              </ul>
+            </li>
+            <li><a href="./admission.html">입학절차</a></li>
+            <li><a href="./curriculum.html">커리큘럼</a>
+              <div><img id="vector2" src="./image/vector.png" onclick="toggleSubMenu2()" /></div>
+              <ul id="curri" class="submenu">
+                <li><a href="./curriculum.html#element">초등과정</a></li>
+                <li><a href="./curriculum.html#middle">중등과정</a></li>
+              </ui>
+            </li>
+          </ul>
+        </div>
+      </button>
       <!-- <button id="login">
         <img src="/image/login_bt.png" />
         <span>로그인</span>
       </button> -->
     </nav>
     <div id="sub">
-      <img src="./image/curriculum_main.jpg" />
+      <div id="main">
+        <div id="m_main">커리큘럼</div>
+        <img id="main_img" src="./image/curriculum_main.jpg" />
+      </div>
       <div class="twin_tab">
         <ul class="tab">
           <li class="is_on">
@@ -69,137 +103,141 @@
             <h4>초등과정</h4>
             <div>
               언어발달의 가장 기초적인 4대 영역 (듣기, 읽기, 말하기, 쓰기) 의
-              균형 학습과<br />
+              균형 학습과<br id="desktop" />
               다양한 프로젝트 활동 그리고 학습 미션을 통해 어학 실력을 향상
               시킵니다.
             </div>
-            <table id="ele_table">
-              <thead>
-                <tr>
-                  <th>레벨</th>
-                  <th>DK, DK<sup>+</sup></th>
-                  <th>D1, D1<sup>+</sup></th>
-                  <th>D2, D2<sup>+</sup></th>
-                  <th>D3, D3<sup>+</sup></th>
-                  <th>D4, D4<sup>+</sup></th>
-                  <th>D5, D5<sup>+</sup></th>
-                  <th>D6, D6<sup>+</sup></th>
-                  <th>D7, D7<sup>+</sup></th>
-                  <th>D ELITE</th>
-                  <th>D CREATOR</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>국내수준</td>
-                  <td>초3</td>
-                  <td>초4~5</td>
-                  <td>초5~6</td>
-                  <td>초6~중1</td>
-                  <td>중1 ~ 중2</td>
-                  <td>중2 ~ 중3</td>
-                  <td>중3 ~고1</td>
-                  <td>고1 ~ 고2</td>
-                  <td colspan="2">고1 심화 ~ 수준 이상</td>
-                </tr>
-                <tr>
-                  <td>미국수준</td>
-                  <td>PK</td>
-                  <td>G1</td>
-                  <td>G2</td>
-                  <td>G3</td>
-                  <td>G4</td>
-                  <td>G5</td>
-                  <td>G6</td>
-                  <td>G6+</td>
-                  <td colspan="2">G7+</td>
-                </tr>
-                <tr>
-                  <td>성취 목표</td>
-                  <td>파닉스<br />마스터</td>
-                  <td>
-                    토셀 Starter<br />
-                    3~2급
-                  </td>
-                  <td>
-                    토셀 Basic<br />
-                    3~2급
-                  </td>
-                  <td>
-                    토셀 Basic<br />
-                    2~1급
-                  </td>
-                  <td>
-                    토셀 Junior<br />
-                    4~3급
-                  </td>
-                  <td>
-                    토셀 Junior<br />
-                    3~2급
-                  </td>
-                  <td>
-                    토셀 Junior<br />
-                    2~1급
-                  </td>
-                  <td>
-                    토셀 High Junior<br />
-                    3~2급
-                  </td>
-                  <td colspan="2">
-                    토플 Junior<br />
-                    수능 모의고사 3등급 이상
-                  </td>
-                </tr>
-                <tr>
-                  <td>어휘</td>
-                  <td>400+</td>
-                  <td>640+</td>
-                  <td>800+</td>
-                  <td>800+</td>
-                  <td>800+</td>
-                  <td>800+</td>
-                  <td>800+</td>
-                  <td>1,000 +</td>
-                  <td colspan="2">1,000+</td>
-                </tr>
-                <tr>
-                  <td>미교과</td>
-                  <td colspan="8">미국 교과과정 (각 레벨 별 사고과정 진행)</td>
-                  <td rowspan="4" colspan="2">
-                    반목표에<br />
-                    따른 개별화
-                  </td>
-                </tr>
-                <tr>
-                  <td>문학</td>
-                  <td>파닉스</td>
-                  <td colspan="2">
-                    다양한 문학 시리즈<br />
-                    <small>(ORT, Biscuit, Little Critter 등)</small>
-                  </td>
-                  <td colspan="5"></td>
-                </tr>
-                <tr>
-                  <td>비문학</td>
-                  <td colspan="3"></td>
-                  <td colspan="5">
-                    Oxford Read and Discover 외 다양한 분야의 컨텐츠<br />
-                    (역사, 문화, 과학, 지리)
-                  </td>
-                </tr>
-                <tr>
-                  <td>하브루타 문법</td>
-                  <td colspan="3"></td>
-                  <td colspan="5">하브루타 문법 및 해설</td>
-                </tr>
-                <tr>
-                  <td>프로젝트</td>
-                  <td colspan="10">
-                    전 레벨에 걸친 어학 기본기/창의 강화 연계 프로젝트
-                  </td>
-                </tr>
-              </tbody>
-            </table>
+            <div>
+              <table id="ele_table">
+                <thead>
+                  <tr>
+                    <th>레벨</th>
+                    <th>DK, DK<sup>+</sup></th>
+                    <th>D1, D1<sup>+</sup></th>
+                    <th>D2, D2<sup>+</sup></th>
+                    <th>D3, D3<sup>+</sup></th>
+                    <th>D4, D4<sup>+</sup></th>
+                    <th>D5, D5<sup>+</sup></th>
+                    <th>D6, D6<sup>+</sup></th>
+                    <th>D7, D7<sup>+</sup></th>
+                    <th>D ELITE</th>
+                    <th>D CREATOR</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>국내수준</td>
+                    <td>초3</td>
+                    <td>초4~5</td>
+                    <td>초5~6</td>
+                    <td>초6~중1</td>
+                    <td>중1 ~ 중2</td>
+                    <td>중2 ~ 중3</td>
+                    <td>중3 ~고1</td>
+                    <td>고1 ~ 고2</td>
+                    <td colspan="2">고1 심화 ~ 수준 이상</td>
+                  </tr>
+                  <tr>
+                    <td>미국수준</td>
+                    <td>PK</td>
+                    <td>G1</td>
+                    <td>G2</td>
+                    <td>G3</td>
+                    <td>G4</td>
+                    <td>G5</td>
+                    <td>G6</td>
+                    <td>G6+</td>
+                    <td colspan="2">G7+</td>
+                  </tr>
+                  <tr>
+                    <td>성취 목표</td>
+                    <td>파닉스<br />마스터</td>
+                    <td>
+                      토셀 Starter<br />
+                      3~2급
+                    </td>
+                    <td>
+                      토셀 Basic<br />
+                      3~2급
+                    </td>
+                    <td>
+                      토셀 Basic<br />
+                      2~1급
+                    </td>
+                    <td>
+                      토셀 Junior<br />
+                      4~3급
+                    </td>
+                    <td>
+                      토셀 Junior<br />
+                      3~2급
+                    </td>
+                    <td>
+                      토셀 Junior<br />
+                      2~1급
+                    </td>
+                    <td>
+                      토셀 High Junior<br />
+                      3~2급
+                    </td>
+                    <td colspan="2">
+                      토플 Junior<br />
+                      수능 모의고사 3등급 이상
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>어휘</td>
+                    <td>400+</td>
+                    <td>640+</td>
+                    <td>800+</td>
+                    <td>800+</td>
+                    <td>800+</td>
+                    <td>800+</td>
+                    <td>800+</td>
+                    <td>1,000 +</td>
+                    <td colspan="2">1,000+</td>
+                  </tr>
+                  <tr>
+                    <td>미교과</td>
+                    <td colspan="8">
+                      미국 교과과정 (각 레벨 별 사고과정 진행)
+                    </td>
+                    <td rowspan="4" colspan="2">
+                      반목표에<br />
+                      따른 개별화
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>문학</td>
+                    <td>파닉스</td>
+                    <td colspan="2">
+                      다양한 문학 시리즈<br />
+                      <small>(ORT, Biscuit, Little Critter 등)</small>
+                    </td>
+                    <td colspan="5"></td>
+                  </tr>
+                  <tr>
+                    <td>비문학</td>
+                    <td colspan="3"></td>
+                    <td colspan="5">
+                      Oxford Read and Discover 외 다양한 분야의 컨텐츠<br />
+                      (역사, 문화, 과학, 지리)
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>하브루타 문법</td>
+                    <td colspan="3"></td>
+                    <td colspan="5">하브루타 문법 및 해설</td>
+                  </tr>
+                  <tr>
+                    <td>프로젝트</td>
+                    <td colspan="10">
+                      전 레벨에 걸친 어학 기본기/창의 강화 연계 프로젝트
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </div>
         </div>
         <!-- Middle -->
@@ -207,138 +245,139 @@
           <div class="curri">
             <h4>중등과정</h4>
             <div>
-              수능 독해를 직독 직해하며, 문법에 필요한 개념을 정리하고<br />
+              수능 독해를 직독 직해하며, 문법에 필요한 개념을 정리하고<br id="desktop" />
               오답을 포트폴리오화하여 내신과 수능을 조기에 완성하는것을 목표로
               학습 합니다.
             </div>
-
-            <table id="mid_table">
-              <colgroup></colgroup>
-              <thead>
-                <tr>
-                  <th>레벨</th>
-                  <th>
-                    중등<br />
-                    INTER
-                  </th>
-                  <th>
-                    중등<br />
-                    INTER<sup>+</sup>
-                  </th>
-                  <th>
-                    중등<br />
-                    MASTER
-                  </th>
-                  <th>
-                    중등<br />
-                    MASTER<sup>+</sup>
-                  </th>
-                  <th>
-                    고등<br />
-                    INTER
-                  </th>
-                  <th>
-                    고등<br />
-                    INTER<sup>+</sup>
-                  </th>
-                  <th>
-                    고등<br />
-                    MASTER
-                  </th>
-                  <th>
-                    고등<br />
-                    MASTER<sup>+</sup>
-                  </th>
-                  <th>수능 ONE</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>학습기간</td>
-                  <td>3개월</td>
-                  <td>3개월</td>
-                  <td>3개월</td>
-                  <td>3개월</td>
-                  <td>6개월</td>
-                  <td>6개월</td>
-                  <td>6개월</td>
-                  <td>6개월</td>
-                  <td>최소 6개월</td>
-                </tr>
-                <tr>
-                  <td>성취목표</td>
-                  <td>
-                    중3 모의<br />
-                    3~2등급
-                  </td>
-                  <td>
-                    중3 모의<br />
-                    3~2등급
-                  </td>
-                  <td>
-                    중3 모의<br />
-                    1등급
-                  </td>
-                  <td>
-                    고1 모의<br />
-                    4~3등급
-                  </td>
-                  <td>
-                    고1 모의<br />
-                    3~2등급
-                  </td>
-                  <td>
-                    고1 모의<br />
-                    2등급
-                  </td>
-                  <td>
-                    고2 모의<br />
-                    3~2등급
-                  </td>
-                  <td>
-                    고2 모의<br />
-                    2등급+
-                  </td>
-                  <td>
-                    고3 모의<br />
-                    2등급+
-                  </td>
-                </tr>
-                <tr>
-                  <td>입시독해</td>
-                  <td colspan="4">중2~3 수준의 독해, 문제풀이</td>
-                  <td colspan="4">고1~고2 수준의 독해, 문제풀이</td>
-                  <td rowspan="4">
-                    고3<br />
-                    완성
-                  </td>
-                </tr>
-                <tr>
-                  <td>수능듣기</td>
-                  <td colspan="4">중3~고1 수준 리스닝 문제 풀이</td>
-                  <td colspan="4">고2~고3 수준 리스닝 문제 풀이</td>
-                </tr>
-                <tr>
-                  <td>문법</td>
-                  <td colspan="4">중등 전과정에 걸친 개념과 문제 풀이</td>
-                  <td colspan="4">중등 전과정에 걸친 개념과 문제 풀이</td>
-                </tr>
-                <tr>
-                  <td>온라인</td>
-                  <td colspan="9">
-                    매주 2회 고1~ 수능 수준의 실전 시험 진행(최소모의고사 40회
-                    이상 시행)
-                  </td>
-                </tr>
-                <tr>
-                  <td>프로젝트</td>
-                  <td colspan="10">
-                    수행 / 내신/ 수능대비를 위한 “서술형/Writing” 집중 연계
-                    프로젝트(학기 1권 완성)
-                  </td>
-                </tr>
-              </tbody>
-            </table>
+            <div>
+              <table id="mid_table">
+                <colgroup></colgroup>
+                <thead>
+                  <tr>
+                    <th>레벨</th>
+                    <th>
+                      중등<br />
+                      INTER
+                    </th>
+                    <th>
+                      중등<br />
+                      INTER<sup>+</sup>
+                    </th>
+                    <th>
+                      중등<br />
+                      MASTER
+                    </th>
+                    <th>
+                      중등<br />
+                      MASTER<sup>+</sup>
+                    </th>
+                    <th>
+                      고등<br />
+                      INTER
+                    </th>
+                    <th>
+                      고등<br />
+                      INTER<sup>+</sup>
+                    </th>
+                    <th>
+                      고등<br />
+                      MASTER
+                    </th>
+                    <th>
+                      고등<br />
+                      MASTER<sup>+</sup>
+                    </th>
+                    <th>수능 ONE</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>학습기간</td>
+                    <td>3개월</td>
+                    <td>3개월</td>
+                    <td>3개월</td>
+                    <td>3개월</td>
+                    <td>6개월</td>
+                    <td>6개월</td>
+                    <td>6개월</td>
+                    <td>6개월</td>
+                    <td>최소 6개월</td>
+                  </tr>
+                  <tr>
+                    <td>성취목표</td>
+                    <td>
+                      중3 모의<br />
+                      3~2등급
+                    </td>
+                    <td>
+                      중3 모의<br />
+                      3~2등급
+                    </td>
+                    <td>
+                      중3 모의<br />
+                      1등급
+                    </td>
+                    <td>
+                      고1 모의<br />
+                      4~3등급
+                    </td>
+                    <td>
+                      고1 모의<br />
+                      3~2등급
+                    </td>
+                    <td>
+                      고1 모의<br />
+                      2등급
+                    </td>
+                    <td>
+                      고2 모의<br />
+                      3~2등급
+                    </td>
+                    <td>
+                      고2 모의<br />
+                      2등급+
+                    </td>
+                    <td>
+                      고3 모의<br />
+                      2등급+
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>입시독해</td>
+                    <td colspan="4">중2~3 수준의 독해, 문제풀이</td>
+                    <td colspan="4">고1~고2 수준의 독해, 문제풀이</td>
+                    <td rowspan="4">
+                      고3<br />
+                      완성
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>수능듣기</td>
+                    <td colspan="4">중3~고1 수준 리스닝 문제 풀이</td>
+                    <td colspan="4">고2~고3 수준 리스닝 문제 풀이</td>
+                  </tr>
+                  <tr>
+                    <td>문법</td>
+                    <td colspan="4">중등 전과정에 걸친 개념과 문제 풀이</td>
+                    <td colspan="4">중등 전과정에 걸친 개념과 문제 풀이</td>
+                  </tr>
+                  <tr>
+                    <td>온라인</td>
+                    <td colspan="9">
+                      매주 2회 고1~ 수능 수준의 실전 시험 진행(최소모의고사 40회
+                      이상 시행)
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>프로젝트</td>
+                    <td colspan="10">
+                      수행 / 내신/ 수능대비를 위한 “서술형/Writing” 집중 연계
+                      프로젝트(학기 1권 완성)
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </div>
         </div>
       </div>
