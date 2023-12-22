@@ -86,7 +86,7 @@
 .inner > div {
   width: 120rem;
   height: 40rem;
-  background-image: url("./image/visual/main_visual.jpg");
+  background-image: url("../image/visual/main_visual.jpg");
   background-repeat: no-repeat;
   background-size: 106% 106%;
   transform: scale(1.06);
@@ -177,7 +177,7 @@
 
 @media screen and (max-width: 768px) {
   .inner > div {
-    background-image: url("./image/visual/m_main_visual.jpg");
+    background-image: url("../image/visual/m_main_visual.jpg");
     width: 100%;
     height: auto;
     padding: 10rem;
@@ -235,7 +235,7 @@ hr {
 #big4 > div {
   width: 75rem;
   height: 42rem;
-  background-image: url("./image/big4_wide.png");
+  background-image: url("../image/big4_wide.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   border-radius: 0.5rem;
@@ -294,7 +294,7 @@ hr {
 #banner > div {
   width: 75rem;
   height: 16.5rem;
-  background-image: url("./image/banner_source.png");
+  background-image: url("../image/banner_source.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   border-radius: 0.5rem;
@@ -383,11 +383,11 @@ hr {
 }
 
 #element {
-  background-image: url("./image/ele_banner_src.png");
+  background-image: url("../image/ele_banner_src.png");
 }
 
 #middle {
-  background-image: url("./image/mid_banner_src.png");
+  background-image: url("../image/mid_banner_src.png");
 }
 
 #twin_banner > div > div > div > div {
@@ -416,7 +416,7 @@ hr {
     width: 100%;
     height: auto;
     padding: 5%;
-    background-image: url("./image/m_big4.png");
+    background-image: url("../image/m_big4.png");
   }
 
   #big4 > div > div:nth-child(1) {
@@ -469,7 +469,7 @@ hr {
   }
 
   #banner > div {
-    background-image: url("./image/m_banner_source.png");
+    background-image: url("../image/m_banner_source.png");
     width: 95%;
     justify-content: center;
   }
