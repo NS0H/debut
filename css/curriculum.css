@@ -62,11 +62,31 @@
   font-display: swap;
 }
 
-nav .menu:nth-child(3){
+nav .menu:nth-child(3) {
   color: #145c93;
   border-bottom: 2px solid #145c93;
 }
 
+#mobile {
+  display: none;
+}
+
+#desktop {
+  display: inherit;
+}
+
+#m_main {
+  display: none;
+
+  color: #fff;
+  text-align: center;
+  text-shadow: 0px 2px 7px rgba(0, 0, 0, 0.25);
+  font-family: Pretendard;
+  font-size: 1.625rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+}
 
 #sub {
   width: 100rem;
@@ -170,8 +190,8 @@ h4 {
   margin: 1.5rem;
 }
 
-.curri > table {
-  width: 75rem;
+.curri > div > table {
+  width: 100rem;
   height: 40rem;
   font-family: Pretendard;
   font-size: 1rem;
@@ -181,12 +201,12 @@ h4 {
   margin: 3rem;
 }
 
-.curri > table th,
+.curri > div > table th,
 td {
   border: 1px solid #d6d6d7;
 }
 
-.curri > table tr > :nth-child(1) {
+.curri > div > table tr > :nth-child(1) {
   color: #888887;
   font-weight: 800;
   font-family: Pretendard;
@@ -195,11 +215,11 @@ td {
   width: 6rem;
 }
 
-.curri > table tr > :last-child {
+.curri > div > table tr > :last-child {
   border-right: none;
 }
 
-.curri > table tr th {
+.curri > div > table tr th {
   width: 5rem;
   height: 3rem;
 
@@ -208,11 +228,11 @@ td {
   color: #fff;
 }
 
-.curri > table > thead > tr > th:first-child {
+.curri > div > table > thead > tr > th:first-child {
   background-color: #fff;
 }
 
-.curri > table#ele_table tr th:nth-child(9) {
+.curri > div > table#ele_table tr th:nth-child(9) {
   width: 6rem;
 }
 
@@ -292,4 +312,84 @@ table#mid_table th:nth-child(9) {
 
 table#mid_table th:nth-child(10) {
   background-color: #4d247d;
+}
+
+@media screen and (max-width: 768px) {
+  #mobile {
+    display: inherit;
+  }
+
+  #desktop {
+    display: none;
+  }
+
+  #main_img {
+    display: none;
+  }
+
+  #sub {
+    width: 100%;
+  }
+
+  #sub #main {
+    background-image: url("./image/m_curriculum_main.jpg");
+    background-size: 100% 100%;
+    width: 100%;
+    height: 7rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .twin_tab {
+    width: 80%;
+  }
+
+  ul {
+    padding-left: 0rem;
+  }
+
+  .twin_tab li {
+    width: 45%;
+
+    font-size: 1rem;
+  }
+
+  .cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .cont_area {
+    margin: 0rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .cont_area .cont .curri {
+    overflow: hidden;
+    width: 95%;
+  }
+
+  .curri > div {
+    font-size: 1rem;
+  }
+
+  .curri > div:last-child {
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border: 1px solid rgba(221, 221, 221, 0.87);
+  }
+
+  .curri > div > table {
+    width: 100rem;
+    margin: 0.5rem;
+    touch-action: pan-y;
+  }
 }

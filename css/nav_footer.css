@@ -62,6 +62,13 @@
   font-display: swap;
 }
 
+#m_menu {
+  display: none;
+
+  border: none;
+  background-color: #fff;
+}
+
 b {
   font-weight: 800;
 }
@@ -133,6 +140,26 @@ nav a:hover {
   font-weight: 500;
   line-height: normal;
   padding: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    position: sticky;
+    top: 0px;
+    z-index: 100;
+
+    display: flex;
+    padding: 1rem 2rem;
+    justify-content: space-between;
+  }
+
+  nav > div {
+    display: none;
+  }
+
+  nav #m_menu {
+    display: inherit;
+  }
 }
 
 /* #login {
@@ -210,4 +237,129 @@ footer > span > span {
 footer > #glory {
   width: 7.5525rem;
   flex-shrink: 0;
+}
+
+@media screen and (max-width: 768px) {
+  footer {
+    padding: 1rem 2rem;
+    flex-direction: column;
+    row-gap: 2rem;
+  }
+
+  footer > #logo {
+    width: 9rem;
+    padding-top: 1rem;
+  }
+
+  footer > div {
+    text-align: center;
+    font-size: 0.8rem;
+  }
+
+  .blank {
+    display: none;
+  }
+}
+
+#mobiile-menu {
+  display: none;
+}
+
+#mobile-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  border-radius: 0rem 0rem 0rem 1.25rem;
+  background-color: #fff;
+}
+
+#mobile-menu li {
+  position: relative;
+}
+
+#mobile-menu a {
+  width: 100%;
+  height: 2rem;
+  text-decoration: none;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+
+  padding-left: 3rem;
+
+  font-family: Pretendard;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+}
+
+#mobile-menu > ul > li {
+  width: 100%;
+  
+  border-top: 1px solid #ddd;
+  /* border-bottom: 1px solid #ddd; */
+}
+
+#mobile-menu > ul > li > a {
+  color: #333;
+}
+
+#mobile-menu > ul > li > div {
+  position: absolute;
+  width: 4rem;
+  height: 2rem;
+  top: 0.3rem;
+  right: 1rem;
+}
+
+#mobile-menu > ul > li > div > img {
+  width: 1rem;
+  height: 0.5rem;
+}
+
+.submenu {
+  display: none;
+  position: relative;
+  top: 100%;
+  left: 0;
+}
+
+.submenu > li {
+  background-color: #f0f0f0;
+  border-bottom: 1px solid #ddd;
+}
+
+.submenu > li > a {
+  color: #595959;
+}
+
+.sub-submenu {
+  position: relative;
+  top: 0;
+  /* left: 100%; */
+}
+
+.sub-submenu > li {
+  background-color: #e0e0e0;
+  border-bottom: 1px solid #c3c3c3;
+}
+
+.sub-submenu > li > a {
+  color: #767a7d;
+}
+
+#mobile-menu > ul > li:last-child > ul > li:last-child {
+  border-radius: 0rem 0rem 0rem 1.25rem;
+}
+
+@media screen and (max-width: 768px) {
+  #mobile-menu {
+    display: none;
+    position: absolute;
+    top: 5.5rem;
+    right: 0;
+    width: 70%;
+    text-align: center;
+  }
 }
