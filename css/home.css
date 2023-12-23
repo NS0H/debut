@@ -443,11 +443,12 @@ hr {
     width: 95%;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    justify-items: center;
   }
 
   .image_button {
-    width: 100%;
-    height: 100%;
+    width: 10rem;
+    height: 12rem;
     border: none;
     background: none;
     cursor: pointer;
