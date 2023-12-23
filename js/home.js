@@ -47,6 +47,9 @@ function changeImage1(isHovered) {
       buttonImage.style.width = "15rem";
     }
   }
+  else {
+    buttonImage.style.width = "100%";
+  }
 }
 function changeImage2(isHovered) {
   if (window.innerWidth > 768) {
@@ -58,6 +61,9 @@ function changeImage2(isHovered) {
       buttonImage.src = "./image/big02.png"; // 마우스 아웃시 이미지 원래대로 변경
       buttonImage.style.width = "15rem";
     }
+  }
+  else {
+    buttonImage.style.width = "100%";
   }
 }
 function changeImage3(isHovered) {
@@ -71,6 +77,9 @@ function changeImage3(isHovered) {
       buttonImage.style.width = "15rem";
     }
   }
+  else {
+    buttonImage.style.width = "100%";
+  }
 }
 function changeImage4(isHovered) {
   if (window.innerWidth > 768) {
@@ -82,6 +91,9 @@ function changeImage4(isHovered) {
       buttonImage.src = "./image/big04.png"; // 마우스 아웃시 이미지 원래대로 변경
       buttonImage.style.width = "15rem";
     }
+  }
+  else {
+    buttonImage.style.width = "100%";
   }
 }
 
